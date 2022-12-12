@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetus</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="find-wrap" class="wrap">
+        <header>
+            <div class="header-inner">
+                <h1><a href="../index.html"><img src="../../images/logo_bk.svg" alt="logo_wh"></a></h1>
+                <!-- logo -->
+                <nav>
+                    <ul class="nav">
+                        <li><a href="../about.html" style="position: relative;">About Vetus <div class="solid5"></div>
+                                </a>
+                            <ul class="sub">
+                                <li><a href="../about.html#about">About VETUS</a></li>
+                                <li><a href="../about.html#vision">Mission&Vision</a></li>
+                                <li><a href="../abouabout.htmlt#how">How to Use</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../social.html" style="position: relative;">Social IMPACT <div class="solid5">
+                                </div></a>
+                            <ul class="sub">
+                                <li><a href="../social.html#problem">Social Problem</a></li>
+                                <li><a href="../social.html#impact">Social IMPACT</a></li>
+                                <li><a href="../social.html#esg">About E.S.G</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../current.html" style="position: relative;">Current STATUS<div class="solid5">
+                                </div></a>
+                            <ul class="sub">
+                                <li><a href="../current.html">Problem Definition</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav-bg"></div>
+                <!-- nav -->
+                <div class="btn">
+                    <button class="problem" style="position: relative;"><a href="../problem.html">문제정의 등록 <div
+                                class="solid3"></div></a></button>
+                    <button class="login" style="position: relative;"><a href="./login.html">Sign In <div
+                                class="solid4"></div></a></button>
+                    <button class="join" style="position: relative;"><a href="./sign.html">Sign Up <div class="solid4">
+                            </div></a></button>
+                </div>
+                <!-- btn -->
+            </div>
+            <!-- header-inner -->
+        </header>
+        <!-- header -->
+        <div class="bg-box">
+            <img src="../images/bg-membership.jpg" alt="멤버쉽bg">
+        </div>
+        <div class="content">
+            <div class="mt150"></div>
+            <div class="title">
+                <h2>아이디/비밀번호 찾기</h2>
+            </div>
+            <div class="mt100"></div>
+            <div class="findUser">
+                <div class="tab">
+                    <ul>
+                        <li class="tab-link current" data-tab="tab-1"><a href="#">아이디 찾기</a></li>
+                        <li class="tab-link" data-tab="tab-2"><a href="#">비밀번호 찾기</a></li>
+                    </ul>
+                </div>
+                <!-- tab -->
+                <div class="mt50"></div>
+                <div id="tab-1" class="tab-content current">
+                    <p>회원가입 시 등록한 정보를 입력해주세요.</p>
+                    <div class="mt20"></div>
+                    <form action="" method="post" name="idFind" id="idFind" role="form">
+                        <div class="form clearfix">
+                            <div class="checkbox">
+                                <input type="radio" name="membType" id="membType" class="membType1" value="1"
+                                    checked="checked">
+                                <label for="membType">기업</label>
+                                <input type="radio" name="membType" id="membType" class="membType2" value="2"
+                                    checked="checked">
+                                <label for="membType">전문가</label>
+                            </div>
+                            <!-- checkbox -->
+                            <div class="mt20"></div>
+                            <div class="name">
+                                <label for="name"></label>
+                                <input type="text" name="name" id="name" placeholder="이름" class="col100">
+                            </div>
+                            <!-- name -->
+                            <div class="mt10"></div>
+                            <div class="mail">
+                                <label for="name"></label>
+                                <input type="text" name="Email" id="Email" placeholder="이메일" class="col100">
+                            </div>
+                            <!-- mail -->
+                            <div class="mt20"></div>
+                            <div class="btn">
+                                <a href="#" class="checkboxBtn">확인</a>
+                            </div>
+                            <!-- btn -->
+                        </div>
+                    </form>
+                </div>
+                <!-- tab01 -->
+                <div id="tab-2" class="tab-content">
+                    <p>회원가입 시 등록한 정보를 입력해주세요.<br>
+                        가입시 등록한 메일주소로 임시 비밀번호를 발송해 드립니다.
+                    </p>
+                    <div class="mt20"></div>
+                    <form action="" name="idFind" method="post">
+                        <div class="form">
+                            <div class="checkbox">
+                                <input type="radio" name="membType" id="membType" class="membType1" value="1"
+                                    checked="checked">
+                                <label for="membType">기업</label>
+                                <input type="radio" name="membType" id="membType" class="membType2" value="2"
+                                    checked="checked">
+                                <label for="membType">전문가</label>
+                            </div>
+                            <!-- checkbox -->
+                            <div class="mt20"></div>
+                            <div class="id">
+                                <label for="name"></label>
+                                <input type="text" name="id" id="id" placeholder="아이디" class="col100">
+                            </div>
+                            <!-- name -->
+                            <div class="mt10"></div>
+                            <div class="name">
+                                <label for="name"></label>
+                                <input type="text" name="name" id="name" placeholder="이름" class="col100">
+                            </div>
+                            <!-- name -->
+                            <div class="mt10"></div>
+                            <div class="mail">
+                                <label for="name"></label>
+                                <input type="text" name="Email" id="Email" placeholder="이메일" class="col100">
+                            </div>
+                            <!-- mail -->
+                            <div class="mt20"></div>
+                            <div class="btn">
+                                <a href="../user/password.html" class="checkboxBtn" role="button">확인</a>
+                            </div>
+                            <!-- btn -->
+                        </div>
+                    </form>
+                </div>
+                <!-- tab02 -->
+            </div>
+            <!-- findUser -->
+        </div>
+        <!-- content -->
+    </div>
+    <!-- wrap -->
+    <div class="mt150"></div>
+    <footer>
+        <div class="foot-box">
+            <div class="logo-box">
+                <h5><img src="../images/foot_logo2.svg" alt="logo" ></h5>
+                <h5><img src="../images/foot_logo.svg" alt="logo" class="footlogo"></h5>
+                <span>철강산업계 집단지성</span>
+            </div>
+            <!-- logo-box -->
+            <div class="foot-inner">
+                <div class="mt50"></div>
+                <div class="foot-inner01">
+                    <ul>
+                        <li>CEO.</li>
+                        <li>조병국</li>
+                    </ul>
+                    <ul>
+                        <li>Tel.</li>
+                        <li>010-8595-0081</li>
+                    </ul>
+                </div>
+                <!-- foot-inner01 -->
+                <div class="mt20"></div>
+                <div class="foot-inner02">
+                    <ul>
+                        <li>E-mail.</li>
+                        <li>bkcho5963@gmail.com</li>
+                    </ul>                        
+                </div>
+                <!-- foot-inner02 -->
+                <div class="mt20"></div>
+                <div class="foot-inner03">
+                    <ul>
+                        <li>Address.</li>
+                        <li>(우)37555 &nbsp;</li>
+                        <li>경북 포항시 북구 흥해읍 신덕로 60 포항대학교 창업보육센터 202호</li>
+                    </ul>
+                </div>
+                <!-- foot-inner03 -->
+                <div class="mt20"></div>
+                <div class="foot-inner04">
+                    <ul>
+                        <li>㈜ 베투스네트웍스</li>
+                    </ul>
+                </div>
+                <!-- foot-inner04 -->
+            </div>
+            <!-- foot-inner -->
+            <div class="btn-box">
+                <ul>
+                    <li><a href="./terms.html">서비스 이용약관</a></li>
+                    <li><a href="./terms.html">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            <!-- btn-box -->
+        </div>
+    </footer>
+    <!-- footer -->
+    <div class="top-btn">
+        <a href="#" class="btn1"><img src="../images/top.jpg" alt="top-btn"></a>
+        <a href="#" class="btn2"><img src="../images/top-hover.jpg" alt="top-btn-hover"></a>
+    </div>
+    <!-- top-btn -->
+
+
+
+    <!---------------------------------------------------------- script ---------------------------------------------------------->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../script/jq.js"></script>
+    <script>
+        //find tab
+        $(document).ready(function () {
+
+            $('.tab ul li').click(function () {
+                var tab_id = $(this).attr('data-tab');
+
+                $('.tab ul li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#" + tab_id).addClass('current');
+            })
+
+        })
+    </script>
+</body>
+
+</html>

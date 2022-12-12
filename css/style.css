@@ -1,0 +1,2000 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*------------------------------------ reset start ------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.clearfix {
+    *zoom: 1;
+  }
+.clearfix::before, .clearfix::after {
+    display: block; content: ""; line-height: 0;
+}
+.clearfix::after{
+    clear: both;
+}
+body{
+    font-size: 14px;
+    line-height: 1.5em;
+    letter-spacing:-.3px; 
+    color: #191919;    
+    font-family:"Noto Sans KR","Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "나눔 고딕", "Nanum Gothic", "돋움", Dotum, "굴림", Gulim, AppleGothic, Sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size: 56px;
+}
+h3{
+    font-size: 48px;
+}
+h4{
+    font-size: 40px;
+}
+h5{
+    font-size: 36px;
+}
+h6{
+    font-size: 24px;
+}
+strong{
+    font-size: 20px;
+}
+small{
+    font-size: 14px;
+}
+img{
+    width: 100%;
+}
+button{
+    border: none;
+}
+
+/* margin -top */
+.mt150{
+    margin-top:150px !important
+}
+.mt100{
+    margin-top:100px !important
+}
+.mt50{
+    margin-top:50px !important
+}
+.mt30{
+    margin-top:30px !important
+}
+.mt20{
+    margin-top:20px !important
+}
+.mt15{
+    margin-top:15px !important
+}
+.mt10{
+    margin-top:10px !important
+}
+.mt5{
+    margin-top:10px !important
+}
+
+
+/* padding-top */
+.pt100{
+    padding-top: 100px !important;
+}
+.pt50{
+    padding-top: 50px !important;
+}
+.pt20{
+    padding-top: 20px !important;
+}
+.pt10{
+    padding-top: 10px !important;
+}
+
+
+.displaynone{
+    display: none;
+}
+.wrap{
+    min-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.content  { 
+    position:relative;
+    max-width: 1300px; 
+    width: 100%; 
+    margin: 0px auto; 
+}
+.content .title{
+    text-align: center;
+}
+.indent{
+    text-indent: 1em;
+    padding: 10px 0;
+}
+
+/* form reset */
+
+form{
+    height:100%;
+}
+input {
+    font-size:inherit; 
+    font-weight:inherit; 
+    color:inherit; 
+}
+input, select, textarea, button{
+    font-size: 16px; 
+    font-family:"Noto Sans KR","Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "나눔 고딕", "Nanum Gothic", "돋움", Dotum, "굴림", Gulim, AppleGothic, Sans-serif; 
+}
+
+input, textarea, select, button, table {
+    font-family: 'Noto Sans KR',sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #191919;    
+}
+input::placeholder, textarea::placeholder { 
+    color:#999999; 
+}
+input[type="text"],input[type="email"],input[type="file"],input[type="password"],input[type="date"],input[type="tel"],select{
+    padding:0 10px; 
+    vertical-align:top;
+}
+input[type="text"],input[type="password"],input[type="date"],input[type="tel"],input[type="email"] { 
+    font-size: 14px; 
+    height: 44px; 
+    line-height: 44px; 
+    border: 1px solid #dbdbdb; 
+    border-radius: 3px;
+    border-top:1px solid #ededed;
+    border-left:1px solid #ededed;
+    outline: 0; 
+}
+button{
+    font-size: 14px;
+    height: 44px;
+    display: inline-block;
+}    
+input[type="password"] {
+    font-family: "Noto Sans KR","Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "나눔 고딕", "Nanum Gothic", "돋움", Dotum, "굴림", Gulim, AppleGothic, Sans-serif; 
+    }
+select {
+    height: 44px;
+    color:#555555;  
+    border: 1px solid #dbdbdb; 
+    border-radius: 3px;
+    border-top:1px solid #9a9a9a;
+    border-left:1px solid #ababab;
+}
+textarea{
+    padding:20px; 
+    font-size: 14px; 
+    line-height:1.7; 
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;    
+    border-radius: 3px;    
+    border-top: 1px solid #ededed;    
+    border-left: 1px solid #ededed;
+    outline: 0;
+}
+button, input[type='submit'],input[type='image'],input[type="button"]{
+    cursor:pointer;
+     border:0;
+}
+
+
+/* table */
+.col10 { 
+    width: 10%; 
+} 
+.col15 { 
+    width: 15%; 
+} 
+.col20 { 
+    width: 20%; 
+} 
+.col25 { 
+    width: 25%; 
+} 
+.col30 { 
+    width: 30%; 
+} 
+.col33 {
+     width: 33.333%; 
+    } 
+.col35 { 
+    width: 35%; 
+} 
+.col40 { 
+    width: 40%; 
+} 
+.col45 { 
+    width: 45%; 
+} 
+.col50 { 
+    width: 50%; 
+} 
+.col55 { 
+    width: 55%; 
+} 
+.col60 { 
+    width: 60%; 
+} 
+.col65 { 
+    width: 65%; 
+} 
+.col66 { 
+    width: 66.666%; 
+} 
+.col70 { 
+    width: 70%; 
+} 
+.col75 { 
+    width: 75%; 
+} 
+.col80 { 
+    width: 80%; 
+} 
+.col85 { 
+    width: 85%; 
+} 
+.col90 { 
+    width: 90%; 
+} 
+.col95 { 
+    width: 95%; 
+} 
+.col100 { 
+    width: 100%; 
+}
+
+.col10, .col15, .col20, .col25, .col30, .col33, .col35, .col40, .col45, .col50, .col55, .col60, .col65, .col66, .col70, .col75, .col80, .col85, .col90, .col95, .col100 { 
+    max-width: 400px; 
+    margin: 0px 2px; 
+}
+
+
+/* keyframes */
+@keyframes imgAni{
+    0%{ 
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    100%{
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+}
+
+@keyframes fadeSide1{
+    0%{
+        opacity: 0;
+        transform: translate3d(-20px,0px,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0,0px,0);
+    }
+}
+
+@keyframes fadeSide2{
+	0% {
+        opacity: 0;
+        transform:translate3d(40px,0px,0);
+    }
+	100% {
+        opacity:1;
+        transform:translate3d(0,0px,0);
+	}
+}
+@keyframes up{
+    0%{
+        opacity: 0;
+        transform: translateY(400px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes showText{
+    0%{
+        opacity: 0;
+        scale: (0,0);
+    }
+    100%{
+        opacity: 1;
+        scale: (1,1);
+    }
+}
+.imgAni{clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
+.imgAni.in-view{animation-name: imgAni; animation-duration: 0.9s;  animation-fill-mode: forwards;}
+.fade_up{opacity:0;}
+.fade_up.in-view{animation-name: fadeUpAni; animation-duration: 0.7s;  animation-fill-mode: forwards;}
+.fade_up2{opacity:0;}
+.fade_up2.in-view{animation-name: fadeUpAni2; animation-duration: 0.6s;  animation-fill-mode: forwards;}
+.fade_ani{opacity:0;}
+.fade_ani.in-view{animation-name: fadeAni; animation-duration: 1s;  animation-fill-mode: forwards;}
+.fade_side{opacity:0;}
+.fade_side.in-view{animation-name: fadeSide1; animation-duration: 0.6s;  animation-fill-mode: forwards;}
+.fade_side2{opacity:0;}
+.fade_side2.in-view{animation-name: fadeSide2; animation-duration: 0.8s;  animation-fill-mode: forwards;}
+.up{opacity:0;}
+.up.in-view{
+    animation-name: up; animation-duration: 1s; animation-fill-mode: forwards;
+}
+.showText{opacity: 0;}
+.showText.in-view{
+    animation-name: showText; animation-duration: 1s; animation-fill-mode: forwards;
+}
+
+.imgAni{
+    animation-name: imgAni;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
+}
+.fadeSide1{
+    animation-name: fadeSide1;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
+}
+.fadeSide2{
+    animation-name: fadeSide2;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
+}
+.up1{
+    animation-name: up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.up2{
+    animation-name: up;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.up3{
+    animation-name: up;
+    animation-duration: 1.8s;
+    animation-fill-mode: forwards;
+}
+
+/*------------------------------------ reset end ------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------ index start -----------------------------------------*/
+
+
+
+/*------------------ header end-----------------------*/
+
+/* 메인페이지 nav 설정 */
+#index-wrap .main{
+    min-width: 1200px;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    position: fixed;
+}
+#index-wrap .main .nav >li > a{
+    color: #fff;
+}
+#index-wrap .main .nav .sub > li > a{
+    color: #fff;
+}
+#index-wrap .main .nav-bg{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-top: 1px solid #fff;
+}
+#index-wrap .main .btn button{
+    background-color: transparent;
+}
+#index-wrap .main .btn button a{
+    padding: 0.4em 1.2em;
+    display: block;    
+    color: #fff;
+}
+/* 메인 문제정의 */
+.solid{
+    width: 170px;
+    height: 5px;
+    background: #fff;
+    opacity:0;
+    margin-top: 61px;
+    transform:scaleX(0);
+    transition-property:opacity, transform;
+    transition-duration:0.3s;
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index:-1;
+    visibility:hidden;
+}
+/* 메인 로그인,회원가입 */
+.solid2{
+    width: 83px;
+    height: 5px;
+    background: #fff;
+    opacity:0;
+    margin-top: 59px;
+    transform:scaleX(0);
+    transition-property:opacity, transform;
+    transition-duration:0.3s;
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index:-1;
+    visibility:hidden;
+}
+/* 문제정의등록 */
+.solid3{
+    width: 170px;
+    height: 5px;
+    background: #191919;
+    opacity:0;
+    margin-top: 61px;
+    transform:scaleX(0);
+    transition-property:opacity, transform;
+    transition-duration:0.3s;
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index:-1;
+    visibility:hidden;
+}
+/* 로그인,회원가입 */
+.solid4{
+    width: 83px;
+    height: 5px;
+    background: #191919;
+    opacity:0;
+    margin-top:61px;
+    transform:scaleX(0);
+    transition-property:opacity, transform;
+    transition-duration:0.3s;
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index:-1;
+    visibility:hidden;
+}
+/* nav btn */
+.solid5{
+    width: 170px;
+    height: 5px;
+    background: #191919;
+    opacity:0;
+    margin-top: 75px;
+    transform:scaleX(0);
+    transition-property:opacity, transform;
+    transition-duration:0.3s;
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index:-1;
+    visibility:hidden;
+}
+/* 메인 nav btn */
+.solid6{
+    width: 170px;
+    height: 5px;
+    background: #fff;
+    opacity:0;
+    margin-top: 75px;
+    transform:scaleX(0);
+    transition-property:opacity, transform;
+    transition-duration:0.3s;
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index:-1;
+    visibility:hidden;
+}
+header.main .problem:hover .solid, header.main .login:hover .solid2, header.main .join:hover .solid2, header.main ul li a:hover .solid6, .problem:hover .solid3, .login:hover .solid4, .join:hover .solid4, nav li a:hover .solid5, .logout:hover .solid4, .account:hover .solid4{
+    transform:scaleX(1);
+    opacity:1;
+    visibility:visible;
+}
+/* header */
+header{
+    min-width: 1300px;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 333;    
+    position: relative;
+}
+.header-inner{
+    width: 1320px;
+    margin: auto;
+}
+
+
+/* logo */
+header h1{
+    float: left;
+    text-align: center;
+    width: 220px;
+    margin-right: 100px;
+    margin-top: 8px;
+}
+
+
+/* gnb */
+.nav{
+    width: 510px;
+    height: 80px;
+    float: left;
+    display: block;
+    position: relative;
+    z-index: 999;
+    margin-right: 80px;
+}
+.nav > li{
+    float: left; 
+}
+.nav >li > a{
+    width: 170px;
+    padding: 26px 0;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;    
+    color: #191919;
+    box-sizing: border-box;
+}
+.sub{
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 81px;
+}
+.sub > li > a{
+    display: block;
+    width: 170px;
+    padding: 15px 0;
+    text-align: center;
+    color: #191919;
+    box-sizing: border-box;
+}
+.nav-bg{
+    width: 100%;
+    height: 153px;
+    margin: auto;
+    background-color:  rgba(225, 225, 225, 0.75);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 777;
+    display: none;
+    border-top: 1px solid #191919;
+}
+.sub > li :hover{
+    background-color: rgba(225, 225, 225, 0.5);
+}
+
+
+
+
+
+
+/* btn */
+
+header .btn button{
+    display: inline-block;
+    margin-top: 14px;
+    background-color: transparent;
+    line-height: 0px;
+}
+header .btn button a{
+    padding: 0.4em 1.2em;
+    display: block;    
+    color: #191919;   
+}
+header .problem{
+    margin-right: 30px;
+    font-size: 20px;
+    background-color: rgba(225, 225, 225, 0);
+    border-radius: 30px;        
+}
+header .login, header .logout{
+    margin-right: 10px;
+}   
+
+/*------------------ header end-----------------------*/
+
+
+/*------------------ swiper start-----------------------*/
+.swiper {
+    margin-top: 80px;
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.swiper-slide {    
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+    background: #fff;
+    margin: auto;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-next, .swiper-button-prev, .swiper-pagination{
+    --swiper-theme-color: rgba(225,225,225,0.5);
+}
+.swiper-button-next:hover, .swiper-button-prev:hover, .swiper-pagination:hover{
+    --swiper-theme-color: #fff;
+}
+
+/*------------------ swiper end-----------------------*/
+
+
+
+/*------------------ icon start-----------------------*/
+
+
+.icon {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.icon ul{
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    float: left;
+    text-align: left;    
+}
+.icon li{
+    width: 31%;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;  
+    background: url(../images/plus.png) 80% 50% no-repeat rgba(0, 0, 0, 0);
+    border: 1px solid #0318537a;
+    padding: 50px;
+    margin-right: 2%;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+.icon li:hover{
+    background: url(../images/plus-wh.png) 80% 50% no-repeat #031953;
+}
+.icon li:hover a{
+    color: #fff;
+}
+.icon p{
+    margin: auto;
+}
+.icon h5{
+    padding: 0 0 30px 0;
+    font-size: 24px;
+}
+/*------------------ icon end-----------------------*/
+
+
+/*------------------ problem start-----------------------*/
+#index-wrap #problem{
+    width: 1280px;
+    overflow: hidden;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#index-wrap #problem h2{
+    text-align: center;
+    height: 100px;
+}
+#index-wrap #problem .board-box{
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    padding: 20px;
+}
+.board-box li{
+    width: 270px;
+    height: 350px;
+    float: left;
+    border: 2px solid #dbdbdb;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 10px 50px 10px;
+    transition: all 0.5s;
+    position: relative;
+}
+.board h5{
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 2px solid #767676;
+    border-radius: 10px;
+}
+.board h5 img{
+    width: 20px;
+    margin: 5px 0px 5px 8px;
+}
+.board .step{
+    float: left;
+    overflow: hidden;
+}
+.board .step-cont{
+    overflow: hidden;
+    padding-left: 6px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.summary-cont{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#index-wrap .board-box li:hover{
+    transform: translateY(-20px);
+    border:2px solid #ffbf00;
+}
+/*------------------ problem end-----------------------*/
+
+
+
+/*------------------ footer start-----------------------*/
+footer{
+    clear: both;
+    width: 100%;  
+    height: 270px;
+    margin: auto;
+    background-color: #031953;
+    box-sizing: border-box;
+}
+.foot-box{
+    max-width: 1300px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 20px;
+    margin: auto;
+    font-size: 16px;
+    font-weight:100;
+    box-sizing: border-box;
+}
+.foot-box div{
+    float: left;
+}
+.logo-box{
+padding: 40px 0 0 40px;
+}
+.logo-box h5{
+    width: 170px;
+    float: left;
+}
+.footlogo{
+    padding: 10px 0 0 40px;
+}
+.logo-box span{
+    display: block;
+    padding-top: 80px;
+    margin-left: 217px;
+    font-size: 14px;
+}
+.foot-inner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.foot-inner div ul{
+    float: left;
+}
+.foot-inner div ul li{
+    float: left;
+    display: list-item;
+}
+.foot-inner01 ul li:nth-child(1)::after, .foot-inner02 ul li:nth-child(1)::after, .foot-inner03 ul li:nth-child(1)::after{
+    background-color: #fff;
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    margin: 0 7px;
+}
+.foot-inner div ul:nth-child(2){
+    margin-left: 15px;
+}
+.btn-box{
+   float: right;
+}
+.btn-box ul{
+   margin: 30px 0 0 30px;
+}
+.btn-box li{
+    padding: 1em 0;
+}
+.btn-box li a{
+    padding: 0.5em 1em;
+    display: block;
+    color: #fff;
+    background-color: rgba(225, 225, 225, 0.5);
+}
+.btn-box li a:hover{
+    background-color: rgba(225,225,225,0.7);
+}
+
+
+/*------------------ footer end-----------------------*/
+
+
+/*------------------ fix-btn start-----------------------*/
+.top-btn {
+    width: 40px;  
+    position: fixed;
+    right: 118px;
+    bottom: 50px; 
+}
+.top-btn .btn1{
+    position: fixed;
+    right: 118px;
+    bottom: 50px;
+    z-index: 999;
+}
+.top-btn .btn2{
+    position: fixed;
+    right: 118px;
+    bottom: 50px;
+    z-index: 888;
+}
+.top-btn .btn1:hover{
+    opacity: 0;
+}
+.problem-btn{
+    position: fixed;
+    right: 117px;
+    bottom: 100px;
+    display: none;
+    background-color: #fff;
+    padding: 1em 1.5em;
+}
+.problem-btn:hover{
+    background-color: rgba(225,225,225,0.5);
+}
+.top-btn:hover .bg-box{
+    opacity: 1;
+}
+
+
+/*------------------ fix-btn end-----------------------*/
+
+
+/*----------------------------------------- index end -----------------------------------------*/
+
+
+
+
+
+/*----------------------------------------- login start-----------------------------------------*/
+
+#login-wrap .content .login{
+    width: 300px;
+    border: 0;
+    margin:auto
+}
+#loginform{
+    margin: auto;
+}
+#login-wrap #id, #login-wrap #password{
+    width: 300px;
+}
+#login-wrap .checkbox input [type="checkbox"]{
+    display:inline-block ;
+}
+#login-wrap .checkbox label{
+    margin-left: 5px;
+}
+#find{
+    width: 322px;
+    overflow: hidden;
+}
+#find :nth-child(1){
+    float: left;
+}
+#find :nth-child(2){
+    float: right;
+}
+#login-wrap #btn{
+    width: 322px;
+    overflow: hidden;
+    display: block;
+    padding: 1em 0;
+    text-align: center;
+    background-color: #031953;
+    border-radius: 3px;
+}
+#login-wrap #btn a{
+    color: #fff;    
+    text-align: center;
+}
+/*----------------------------------------- login end-----------------------------------------*/
+
+
+
+
+
+/*----------------------------------------- sign start-----------------------------------------*/
+#sign-wrap .content{
+    overflow: hidden;
+}
+#sign-wrap .type-text{
+    text-align: center;
+    font-size: 16px;
+}
+#sign-wrap .user-type{
+    max-width: 400px;
+    width: 400px;
+    margin: auto;
+}
+#sign-wrap .user-type ul li{
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    float: left
+}
+#sign-wrap .user-type ul :nth-child(1){
+    margin-right: 100px;
+}
+#sign-wrap .user-type ul li a{
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    font-size: 20px;   
+    background-color: #dbdbdb;
+    border-radius: 20px; 
+    transition: all 0.1s;
+    display: block;
+    text-align: center;
+}
+#sign-wrap .user-type .type-title{
+    width: 100%;
+}
+#sign-wrap .user-type ul li :hover{
+    background-color: #031953;
+    color: #fff;
+    border-radius: 20px;
+}
+/*----------------------------------------- sign end-----------------------------------------*/
+
+
+
+
+/*----------------------------------------- type start-----------------------------------------*/
+.sign{
+    position: relative;
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.datatitle{
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+}
+.table-type1{
+    border-top: 2px solid #031953;
+}
+table{
+    border-spacing: 0;
+    width: 100%;
+}
+colgroup{
+    display: table-column-group;
+}
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+.table-type1 tr, .table-type1-information tr, .table-type2-information tr{ 
+    display: table-row;
+}
+.table-type1 th, .table-type1-information th, .table-type2-information th{
+    padding: 1.5em;
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: 1px solid #ededed;
+    text-align: right;
+    background-color: #f1f1f5;
+}
+.table-type1 td, .table-type1-information td, .table-type2-information td{
+    padding-left: 20px;
+    border-bottom: 1px solid #ededed;
+}
+.table-type1 .star, .table-type1-information .star .table-type2-information .star{
+    color: #b30000;
+}
+.table-type1 .checkbox input [type="checkbox"], .table-type1-information .checkbox input [type="checkbox"], .table-type2-information .checkbox input [type="checkbox"] {
+    display:inline-block ;
+}
+.table-type1 .checkbox label, .table-type1-information .checkbox label, .table-type2-information .checkbox label{
+    margin-left: 5px;
+}
+.table-type1 .checkbox :nth-child(2), .table-type1-information .checkbox :nth-child(2), .table-type2-information .checkbox :nth-child(2){
+    padding-right: 20px;
+}
+.table-type1 .numonly, .table-type1-information .numonly, .table-type2-information .numonly{
+    width: 80px;
+}
+.table-type1 textarea, .table-type1-information textarea, .table-type2-information textarea{
+    overflow: hidden;
+    resize:none;
+}
+
+
+
+/* .agreement */
+.agreement{
+    max-width: 1200px;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 50px;
+    border: 1px solid #ededed;
+}
+.agreement li{
+    width: 280px;
+    height: 30px;
+}
+.agreement .agree-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.agreement a{
+    float: right;
+}
+.agreement img{
+    width: 10px;
+}
+
+/* sign-btn */
+.sign-btn{
+    position: relative;
+}
+.sign-btn ul{
+    text-align: center;
+}
+.sign-btn ul li{
+    display: inline-block;
+    max-width: 250px;
+    width: 49.5%;
+    margin-right: 1%;
+}
+.sign-btn ul li a{
+    display: block;
+    font-size: 20px;
+    line-height: 50px;
+    height: 50px;
+    color: #fff;
+}
+.sign-btn ul li a.check{
+    background-color: #031953;    
+}
+.sign-btn ul li a.cancle{
+    background-color: #dbdbdb;
+}
+.sign-btn ul li a.unregister{
+    background-color: #9a9a9a;
+}
+
+
+
+
+/*----------------------------------------- type end-----------------------------------------*/
+
+
+
+
+
+
+/*----------------------------------------- find start-----------------------------------------*/
+
+
+
+.findUser{
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#find-wrap .findUser .tab ul{
+    max-width: 500px;
+    width: 420px;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+}
+#find-wrap .findUser .tab li{
+    float: left;
+    width: 49%;
+    margin-right: 1%;    
+	cursor: pointer;
+    background-color: #ededed;
+}
+#find-wrap .findUser .tab li a{
+    font-size: 20px;
+    line-height: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+}
+#find-wrap .findUser .tab li.current a{
+    background-color: #031953;
+    color: #fff;
+}
+.findUser .tab-content{
+	display: none;
+    width: 100%;
+}
+.findUser div.current{
+	display: inherit;
+}
+#find-wrap .findUser p{
+    text-align: center;
+    font-size: 16px;
+}
+#find-wrap .findUser .form{
+    text-align: center;
+}
+#find-wrap .findUser input[type="radio"]{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin-top: 3px;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0,0,0,1);
+}
+#find-wrap .findUser input[type="radio"] + label{
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    margin-right: 30px;
+    font-size: 20px;
+}
+.findUser .btn{
+    margin: auto;
+    text-align: center;
+    width: 420px;
+    height: 44px;
+    background-color: #031953;
+    line-height: 44px;
+}
+.findUser .btn a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+/*----------------------------------------- find end-----------------------------------------*/
+
+
+
+
+/*----------------------------------------- terms start-----------------------------------------*/
+#terms-wrap .content .terms h1, #terms-wrap .content .tetmsCont h1 {
+    font-size: 24px;
+}
+#terms-wrap .content .terTtitle, #terms-wrap .content .tetmsCont h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.terms {
+    overflow: hidden;
+}
+/* nav-box */
+.terms .nav{
+    max-width: 1200px;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+.terms .nav-box{
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    border: 1px solid #ededed;
+    padding: 20px;
+}
+.terTtitle{
+    display: block;
+    padding-bottom: 10px;
+}
+.terms1, .terms2{
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+.terms1 a, .terms2 a{
+    display: block;
+}
+.sub-box1{
+    width: 280px;
+    height: 300px;
+    float: left;
+    margin-right: 20px;
+}
+.sub-box2{
+    width: 280px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+}
+.terms2 a{
+    display: block;
+    width: 130px;
+    height: 40px;
+    box-sizing: border-box;
+    line-height: 36px;
+    text-align: center;
+    text-indent: 20px;
+    background: url(../images/download.png) 20px center no-repeat  #fff;
+    border: 2px solid #031953;
+    border-radius: 25px;
+}
+.terms2 a:hover{
+    background-color: #ededed;
+}
+.nav-box ol a.subT:hover{
+    color: #999999;
+}
+
+/* termsCont */
+.tetmsCont{
+    clear: both;
+    overflow: hidden;
+    padding: 20px;
+    line-height: 2em;
+}
+.tetmsCont table{
+    width: 80%;
+    margin: auto;
+    border: 1px solid #999;
+}
+.tetmsCont table .center{
+    text-align: center;
+}
+.tetmsCont table th{
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #999;
+    text-align: center;
+}
+.tetmsCont table td{
+    border-bottom: 1px solid #ededed;
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+
+/*----------------------------------------- terms end-----------------------------------------*/
+
+
+
+
+
+/*----------------------------------------- problem start-----------------------------------------*/
+
+.offer{
+    border-top: 2px solid #031953;
+    position: relative;
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.offer tr{
+    display: table-row;
+}
+.offer th{
+    padding: 1.5em;
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: 1px solid #ededed;
+    text-align: right;
+    background-color: #f1f1f5;
+}
+.offer td{
+    padding-left: 20px;
+    border-bottom: 1px solid #ededed;
+}
+.offer input{
+    max-width: 900px;
+}
+.offer.star{
+    color: #b30000;
+}
+
+.offer textarea{
+    overflow: hidden;
+    resize:none;
+    margin: 12px 0 12px 3px;
+}
+.offer .btn, .content.btn{
+    position: relative;
+}
+.offer .btn ul, .btn ul{
+    text-align: right;
+    display: block;
+    margin-right:70px;
+}
+.offer .btn ul li, .btn ul li{
+    width: 31.666%;
+    display: inline-block;
+    max-width: 100px;
+    margin-right: 2%;
+    text-align: center;
+}
+.offer .btn ul li a, .btn ul li a{ 
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0.5em;
+}
+.offer .btn .reference, .btn .reference{
+    background-color: #ededed;
+}
+.offer .btn .storage, .btn .storage{
+    border: 2px solid #999999;
+}
+.offer .btn .submit, .btn .submit, .btn .write{
+    background-color: #031953;
+    color: #fff;
+}
+button.reference{
+    float: right;
+    padding: 0.5em 1.5em;
+}
+
+
+/* madal */
+.popup{
+    display: none;
+}
+.container{
+	width: 70%;
+	margin:auto;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+.popup ul.tabs{
+    width: 100%;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+    background-color: #ededed;
+}
+.popup ul.tabs li{
+    width: 24.8%;
+	display: inline-block;
+	cursor: pointer;
+    text-align: center;
+    padding: 1em 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #ededed;
+}
+
+.popup ul.tabs li.current, li.cur{
+	background: #031953;
+	color: #fff;
+}
+.popupBg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.52);
+    width: 100%;
+    height: 100vh;
+    z-index: 888;
+}
+.popup .tab-content{
+	display: none;
+    width: 100%;
+}
+.popup .tab-content.current{
+	display: inherit;
+}
+.popup button.close{
+    position: absolute;
+    top: 65px;
+    right: 206px;
+    z-index: 999;
+    font-size: 16px;
+    border: 1px solid #ededed;
+    background-color: #fff;
+    cursor: pointer;
+    width: 80px;
+    height: 54px;
+    line-height: 53px;
+
+}
+
+/*----------------------------------------- problem end-----------------------------------------*/
+
+
+
+
+
+/*----------------------------------------- password start-----------------------------------------*/
+
+
+.password{
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+.password .form{
+    width: 500px;
+    margin: auto;
+}
+#password-wrap input[type='text']{
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+#password-wrap .content .btn{
+    margin: auto;
+    text-align: center;
+    width: 322px;
+    height: 44px;
+    background-color: #031953;
+    line-height: 44px;
+}
+#password-wrap .content .btn a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/*----------------------------------------- password end-----------------------------------------*/
+
+
+
+
+/*----------------------------------------- accout start-----------------------------------------*/
+
+#account-wrap .content{
+    clear: both;
+    max-width: 500px;
+    overflow: hidden;
+    margin: auto;
+}
+#account-wrap .content ul{
+    float: left;
+    display: block;
+    width: 100%;
+}
+#account-wrap .content ul a{
+    float: left;
+    display: block;
+    width: 48%;
+    text-align: center;
+    background-color: #ededed;
+    border-radius: 20px;
+    padding: 1em 0;
+    margin-right: 4%;
+    font-size: 16px;
+}
+#account-wrap .content ul li:last-child a{
+    margin: 0;
+}
+#account-wrap .content ul a:hover{
+    background-color: #031953;
+    color: #fff;
+}
+
+
+
+/*----------------------------------------- accout end-----------------------------------------*/
+
+
+
+
+
+/*----------------------------------------- board start-----------------------------------------*/
+
+
+
+#board-wrap .board, #current-wrap .board, #current-detail03-wrap .board{
+    border-bottom: 2px solid #031953;
+    position: relative;
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+#current-detail03-wrap .board{
+    border-top: 1px solid#ededed;
+}
+#current-wrap .board{
+    border-top: 0;
+}
+#board-wrap .board tr, #current-wrap .board tr, #current-detail03-wrap .board tr{
+    display: table-row;
+}
+#board-wrap .board th, #current-wrap .board th, #current-detail03-wrap .board th{
+    padding: 0.5em;
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: 1px solid #ededed;
+    background-color: #f1f1f5;
+    border-top: 2px solid #031953;
+}
+#current-detail03-wrap .board th{
+    border-top: 0px;
+}
+#board-wrap .board select, #current-wrap .board select{
+    background-color: transparent;
+    border: 0;
+}
+#board-wrap .board select option, #current-wrap .board select option{
+    text-align: left;
+}
+#board-wrap .board td, #current-wrap .board td, #current-detail03-wrap .board td{
+    border-bottom: 1px solid #ededed;
+    padding: 1em;
+    box-sizing: border-box;
+}
+.boardList{
+    text-align: center;
+}
+.boardStep{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    white-space: nowrap;
+}
+#board-wrap .write, #current-wrap .write, #current-detail03-wrap .write{
+    max-width: 250px;
+    font-size: 16px;
+    height: 40px;
+    text-align: center;
+    float: right;
+}
+#board-wrap .write a, #current-wrap .write a, #current-detail03-wrap .write a{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box ;
+    display: block;
+    padding: 0  1.5em;
+    line-height: 40px;
+}
+#board-wrap .write a:hover, #current-wrap .write a:hover, #current-detail03-wrap .write a:hover{
+    background-color: #031953;
+    color: #fff;
+}
+.current tr:hover, #board-wrap .board tr:hover{
+    background-color: rgba(225, 225, 225, 0.75);
+}
+.fileUp{
+    width: 100%;
+}
+.fileUp span{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.fileUp ul{
+    display:block;
+    margin-left: 60px;
+    position: relative;
+    top: -30px;
+}
+.fileUp ul li{
+    padding: 10px 0;
+}
+/* 검색창 */
+.search-box{
+    width: 300px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    border-bottom: 1px solid #ededed;
+}
+.search-box select.opt{
+    display: block;
+    float: left;
+    border: 0;
+    background-color: transparent;
+}
+.search-box .search{
+    width: 200px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: block;
+}
+.search-box .search .search-input{
+    width: 150px;
+    border: 0;
+}
+.search-input2{
+    padding: 20px 0;
+}
+
+/* paging */
+.content .paging{
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+} 
+.paging p a{
+    padding-left: 15px;
+}
+.paging p, .paging ol, .paging ol li{
+    display: inline-block;
+    zoom: 1;
+    display: inline;
+    vertical-align: middle;
+    margin-top: -1px;
+}
+.paging ol li a.this {
+    color: #333;
+    font-weight: 700;
+}
+.paging ol li a {
+    color: #999;
+    padding: 5px 10px;
+}
+
+/*----------------------------------------- board end-----------------------------------------*/
+
+
+
+
+/*----------------------------------------- board-detail start-----------------------------------------*/
+
+
+
+.content .detail-inner{
+    width: 100%;
+    margin: auto;
+    border-bottom: 2px solid #031953;
+}
+.content .detail-inner h4{
+    border-bottom: 2px solid #031953;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+#current-detail02-wrap{
+    overflow: hidden;
+    height: auto;
+}
+/* .tab-box */
+.tab-box{
+    width: 650px;
+    height: 35px;
+}
+.tab-box li{
+    width: 25%;
+    overflow: hidden;
+    float: left;
+    border-right: 1px solid #dedede;
+    box-sizing: border-box;
+}
+.tabnav :nth-child(1)a{
+    border-left: 1px solid #dedede;
+}
+.tab-box a{
+    width: 100%;
+    float: left;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ededed;
+    padding: 0.5em 0;
+}
+.tab-box .tabnav li .active{
+    background-color: #031953;
+}
+.tabnav li a:hover, .tabnav li a.active{
+  background:#031953;
+  color: #fff;
+}
+
+/* topbox */
+.topbox {
+    width: 100%;
+    height: 128px;
+    margin-right: 5%;
+    text-align: left;
+    border-top: 1px solid #dedede;
+}
+.topbox th{
+    padding: 5px 10px;
+    font-weight: normal;
+    border-bottom: 1px solid #dedede;
+    background-color: #ededed;
+    text-indent: 15px;
+    text-align: center;
+}
+.topbox td{
+    padding-left: 20px;
+    border-bottom: 1px solid #dedede;
+}
+
+/* detail-box */
+.boardTab{
+    width: 100%;
+    position: relative;
+}
+
+.detail-box strong{
+    width: 100%;
+    display: block;
+    padding: 0.5em 0 0.5em 0.5em;
+    background-color: #ededed;
+    border-bottom: 1px solid #dedede;
+    box-sizing: border-box;
+    float: left;
+}
+.detail-box .cont-box{
+    width: 99.999%;
+    height: 150px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+}
+.cont-box textarea{
+    width: 99.999%;
+    height: 96%;
+    box-sizing: border-box;
+    border: 0;
+    resize : none;
+    outline: none;
+}
+.detail-box div.box04-cont{
+    height: 363px;
+}
+.reference-box .reference{
+    max-width: 250px;
+    display: block;
+    float: right;
+    padding: 0.5em 1.5em;
+}
+
+/* boardTab02 */
+.writer{
+    margin: 12px 0 29px;
+    padding: 16px 10px 10px 18px;
+    border: 2px solid #ededed;
+}
+.writer .writer-box{
+    position: relative;
+    margin-bottom: 10px;
+}
+.writer .writer-box .name{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.writer .writer-box textarea{
+    max-height: 500px;
+}
+.submitbtn{
+    text-align: right;
+    padding-top: 10px;
+}
+.submitbtn a{
+    display: inline-block;
+    min-width: 46px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 13px;
+    color:#999999; 
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: top;
+}
+.comment .comment-box{
+    margin-left: 46px;
+}
+.comment-item-reply{
+    padding-left: 46px;
+}
+.comment .comment-area{
+    position: relative;
+    padding: 12px 23px 10px 0;
+    border-bottom: 1px solid #ededed;
+}
+.comment .comment-text .nick{
+    margin-bottom: 4px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+.comment .comment-text .nick a{
+    font-weight: 600;
+}
+.comment .comment-text .text{
+    position: relative;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.comment .comment-text .text-view{
+    overflow: hidden;
+}
+.comment .comment-text .info{
+    margin-top: 7px;
+    font-size: 12px;
+    color: #767676;
+    font-weight: 600;
+}
+.comment .comment-text .info .info-date{
+    margin-right: 10px;
+}
+.comment .comment-text .info .info-button{
+    color: inherit;
+}
+.comment .comment-text .info .info-button:hover{
+    border-bottom: 1px solid #767676;
+}
+/*----------------------------------------- board-detail end-----------------------------------------*/
+
+
+
+
+
+
+/*----------------------------------------- about start-----------------------------------------*/
+
+
+/* about */
+#about-wrap .content, #social-wrap .content{
+    box-sizing: border-box;
+}
+/* #about-wrap .tab{
+    width: 33.333%;
+    margin: auto;
+}
+#about-wrap .tab ul li{
+    width: 32.8%;
+	display: inline-block;
+	cursor: pointer;
+    text-align: center;
+    padding:  0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-right: 1px solid #ededed;
+    color: #999;
+    font-weight: 300;
+}
+#about-wrap .tab ul li:nth-child(3){
+    border-right: 0;
+}
+#about-wrap .tab ul li.current{
+	color: #191919;
+    font-weight: 700;
+}
+#about-wrap .content .tab-content{
+    width: 100%;
+}
+#about-wrap .content .tab-content .current{
+	display: inherit;
+} */
+.item-box{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.item{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/*----------------------------------------- about end-----------------------------------------*/
+
+
+
+
+/*----------------------------------------- vision start-----------------------------------------*/
+
+
+/*----------------------------------------- social start-----------------------------------------*/
+
+
+#social-wrap .content h5.subtitle{
+    font-weight: 300;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.underline{
+    width: 100px;
+    height: 2px;
+    background-color: #000;
+    text-align: center;
+    margin: auto;
+}
+
+
+/*----------------------------------------- social end-----------------------------------------*/

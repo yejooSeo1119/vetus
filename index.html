@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetus</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f1f1f5;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="index-wrap" class="wrap">
+        <header class="main">
+            <div class="header-inner">
+                <h1><a href="index.html"><img src="./images/logo_wh.svg" alt="logo_wh"></a></h1>
+                <!-- logo -->
+                <nav>
+                    <ul class="nav">
+                        <li><a href="./about.html" style="position: relative;">About Vetus <div class="solid5"></div>
+                                </a>
+                            <ul class="sub">
+                                <li><a href="./about.html">About VETUS</a></li>
+                                <li><a href="./vision.html">Mission&Vision</a></li>
+                                <li><a href="./how.html">How to Use</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./social.html" style="position: relative;">Social IMPACT <div class="solid5"></div>
+                                </a>
+                            <ul class="sub">
+                                <li><a href="./social.html#problem">Social Problem</a></li>
+                                <li><a href="./social.html#impact">Social IMPACT</a></li>
+                                <li><a href="./social.html#esg">About E.S.G</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./current.html" style="position: relative;">Current STATUS <div class="solid5">
+                                </div></a>
+                            <ul class="sub">
+                                <li><a href="./current.html">Problem Definition</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav-bg"></div>
+                <!-- nav -->
+                <div class="btn">
+                    <button class="problem" style="position: relative;"><a href="./problem.html">문제정의 등록 <div
+                                class="solid"></div></a></button>
+                    <button class="login" style="position: relative;"><a href="./user/login.html">Sign In <div
+                                class="solid2"></div></a></button>
+                    <button class="join" style="position: relative;"><a href="./user/sign.html">Sign Up <div
+                                class="solid2"></div></a></button>
+                </div>
+                <!-- btn -->
+            </div>
+            <!-- header-inner -->
+        </header>
+        <!-- header -->
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide parallax-bg" style="background-image: url(./images/1.jpg);"
+                    data-swiper-parallax="-23%">
+                </div>
+                <!-- 슬라이드 1 -->
+                <div class="swiper-slide parallax-bg" style="background-image: url(./images/2.jpg);"
+                    data-swiper-parallax="-23%">
+                </div>
+                <!-- 슬라이드 2 -->
+                <div class="swiper-slide parallax-bg" style="background-image: url(./images/3.jpg);"
+                    data-swiper-parallax="-23%">
+                </div>
+                <!-- 슬라이드 3 -->
+                <div class="swiper-slide parallax-bg" style="background-image: url(./images/4.jpg);"
+                    data-swiper-parallax="-23%">
+                </div>
+                <!-- 슬라이드 4 -->
+                <div class="swiper-slide parallax-bg" style="background-image: url(./images/5.jpg);"
+                    data-swiper-parallax="-23%">
+                </div>
+                <!-- 슬라이드 5 -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- 페이징 -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 스와이퍼 -->
+        <div class="content">
+            <div class="mt150"></div>
+            <div class="icon">
+                <ul>
+                    <li class="up1">
+                        <a href="./about.html">
+                            <h5>INTRODUCTION</h5>
+                            <p>기업소개</p>
+                    </li>
+                    <li class="up2">
+                        <a href="./social.html">
+                            <h5>Social Impact</h5>
+                            <p>소셜임팩트</p>
+                        </a>
+                    </li>
+                    <li class="up3">
+                        <a href="./current.html">
+                            <h5>Current STATUS</h5>
+                            <p>문제정의</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- icon -->
+            <div class="mt50 clearfix"></div>
+            <div id="problem">
+                <div class="mt150"></div>
+                <h2 class="clearfix" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                    문제정의 리스트</h2>
+                <div class="mt50"></div>
+                <ul class="board-box">
+                    <li>
+                        <div class="board" onclick="document.location.href='./current-detail01.html'">
+                            <strong>문제정의 title</strong>
+                            <div class="mt15"></div>
+                            <p class="step">단계:</p>
+                            <p class="step-cont">STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안 STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안
+                            </p>
+                            <div class="mt15"></div>
+                            <p class="reward">보상금(만원):
+                                <!--보상금 기입--> 100
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="end">종료일:
+                                <!--종료일 기입--> 2022.00.00
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="summary">개요</p>
+                            <div class="mt10"></div>
+                            <!--종료일 기입-->
+                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명
+                            </p>
+                        </div>
+                    </li>
+                    <!------------- 문제정의 리스트 1 --------------->
+                    <li>
+                        <div class="board" onclick="document.location.href='./current-detail01.html'">
+                            <strong>문제정의 title</strong>
+                            <div class="mt15"></div>
+                            <p class="step">단계:</p>
+                            <p class="step-cont">STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안</p>
+                            <div class="mt15"></div>
+                            <p class="reward">보상금(만원):
+                                <!--보상금 기입--> 100
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="end">종료일:
+                                <!--종료일 기입--> 2022.00.00
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="summary">개요</p>
+                            <div class="mt10"></div>
+                            <!--종료일 기입-->
+                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명
+                            </p>
+                        </div>
+                    </li>
+                    <!------------- 문제정의 리스트 2 --------------->
+                    <li>
+                        <div class="board" onclick="document.location.href='./current-detail01.html'">
+                            <strong>문제정의 title</strong>
+                            <div class="mt15"></div>
+                            <p class="step">단계:</p>
+                            <p class="step-cont">STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안</p>
+                            <div class="mt15"></div>
+                            <p class="reward">보상금(만원):
+                                <!--보상금 기입--> 100
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="end">종료일:
+                                <!--종료일 기입--> 2022.00.00
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="summary">개요</p>
+                            <div class="mt10"></div>
+                            <!--종료일 기입-->
+                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명
+                            </p>
+                        </div>
+                    </li>
+                    <!------------- 문제정의 리스트 3 --------------->
+                    <li>
+                        <div class="board" onclick="document.location.href='./current-detail01.html'">
+                            <strong>문제정의 title</strong>
+                            <div class="mt15"></div>
+                            <p class="step">단계:</p>
+                            <p class="step-cont">STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안</p>
+                            <div class="mt15"></div>
+                            <p class="reward">보상금(만원):
+                                <!--보상금 기입--> 100
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="end">종료일:
+                                <!--종료일 기입--> 2022.00.00
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="summary">개요</p>
+                            <div class="mt10"></div>
+                            <!--종료일 기입-->
+                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명
+                            </p>
+                        </div>
+                    </li>
+                    <!------------- 문제정의 리스트 4 --------------->
+                    <li>
+                        <div class="board" onclick="document.location.href='./current-detail01.html'">
+                            <strong>문제정의 title</strong>
+                            <div class="mt15"></div>
+                            <p class="step">단계:</p>
+                            <p class="step-cont">STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안</p>
+                            <div class="mt15"></div>
+                            <p class="reward">보상금(만원):
+                                <!--보상금 기입--> 100
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="end">종료일:
+                                <!--종료일 기입--> 2022.00.00
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="summary">개요</p>
+                            <div class="mt10"></div>
+                            <!--종료일 기입-->
+                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명
+                            </p>
+                        </div>
+                    </li>
+                    <!------------- 문제정의 리스트 5 --------------->
+                    <li>
+                        <div class="board" onclick="document.location.href='./current-detail01.html'">
+                            <strong>문제정의 title</strong>
+                            <div class="mt15"></div>
+                            <p class="step">단계:</p>
+                            <p class="step-cont">STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안</p>
+                            <div class="mt15"></div>
+                            <p class="reward">보상금(만원):
+                                <!--보상금 기입--> 100
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="end">종료일:
+                                <!--종료일 기입--> 2022.00.00
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="summary">개요</p>
+                            <div class="mt10"></div>
+                            <!--종료일 기입-->
+                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명
+                            </p>
+                        </div>
+                    </li>
+                    <!------------- 문제정의 리스트 6--------------->
+                    <li>
+                        <div class="board" onclick="document.location.href='./current-detail01.html'">
+                            <strong>문제정의 title</strong>
+                            <div class="mt15"></div>
+                            <p class="step">단계:</p>
+                            <p class="step-cont">STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안</p>
+                            <div class="mt15"></div>
+                            <p class="reward">보상금(만원):
+                                <!--보상금 기입--> 100
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="end">종료일:
+                                <!--종료일 기입--> 2022.00.00
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="summary">개요</p>
+                            <div class="mt10"></div>
+                            <!--종료일 기입-->
+                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명
+                            </p>
+                        </div>
+                    </li>
+                    <!------------- 문제정의 리스트 7 --------------->
+                    <li>
+                        <div class="board" onclick="document.location.href='./current-detail01.html'">
+                            <strong>문제정의 title</strong>
+                            <div class="mt15"></div>
+                            <p class="step">단계:</p>
+                            <p class="step-cont">STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안</p>
+                            <div class="mt15"></div>
+                            <p class="reward">보상금(만원):
+                                <!--보상금 기입--> 100
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="end">종료일:
+                                <!--종료일 기입--> 2022.00.00
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="summary">개요</p>
+                            <div class="mt10"></div>
+                            <!--종료일 기입-->
+                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명
+                            </p>
+                        </div>
+                    </li>
+                    <!------------- 문제정의 리스트 8 --------------->
+                    <li>
+                        <div class="board" onclick="document.location.href='./current-detail01.html'">
+                            <strong>문제정의 title</strong>
+                            <div class="mt15"></div>
+                            <p class="step">단계:</p>
+                            <p class="step-cont">STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안</p>
+                            <div class="mt15"></div>
+                            <p class="reward">보상금(만원):
+                                <!--보상금 기입--> 100
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="end">종료일:
+                                <!--종료일 기입--> 2022.00.00
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="summary">개요</p>
+                            <div class="mt10"></div>
+                            <!--종료일 기입-->
+                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명
+                            </p>
+                        </div>
+                    </li>
+                    <!------------- 문제정의 리스트 9 --------------->
+                    <li>
+                        <div class="board" onclick="document.location.href='./current-detail01.html'">
+                            <strong>문제정의 title</strong>
+                            <div class="mt15"></div>
+                            <p class="step">단계:</p>
+                            <p class="step-cont">STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안</p>
+                            <div class="mt15"></div>
+                            <p class="reward">보상금(만원):
+                                <!--보상금 기입--> 100
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="end">종료일:
+                                <!--종료일 기입--> 2022.00.00
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="summary">개요</p>
+                            <div class="mt10"></div>
+                            <!--종료일 기입-->
+                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명
+                            </p>
+                        </div>
+                    </li>
+                    <!------------- 문제정의 리스트 10 --------------->
+                    <li>
+                        <div class="board" onclick="document.location.href='./current-detail01.html'">
+                            <strong>문제정의 title</strong>
+                            <div class="mt15"></div>
+                            <p class="step">단계:</p>
+                            <p class="step-cont">STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안</p>
+                            <div class="mt15"></div>
+                            <p class="reward">보상금(만원):
+                                <!--보상금 기입--> 100
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="end">종료일:
+                                <!--종료일 기입--> 2022.00.00
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="summary">개요</p>
+                            <div class="mt10"></div>
+                            <!--종료일 기입-->
+                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명
+                            </p>
+                        </div>
+                    </li>
+                    <!------------- 문제정의 리스트 11 --------------->
+                    <li>
+                        <div class="board" onclick="document.location.href='./current-detail01.html'">
+                            <strong>문제정의 title</strong>
+                            <div class="mt15"></div>
+                            <p class="step">단계:</p>
+                            <p class="step-cont">STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안</p>
+                            <div class="mt15"></div>
+                            <p class="reward">보상금(만원):
+                                <!--보상금 기입--> 100
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="end">종료일:
+                                <!--종료일 기입--> 2022.00.00
+                            </p>
+                            <div class="mt5"></div>
+                            <p class="summary">개요</p>
+                            <div class="mt10"></div>
+                            <!--종료일 기입-->
+                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명
+                            </p>
+                        </div>
+                    </li>
+                    <!------------- 문제정의 리스트 12 --------------->
+                </ul>
+            </div>
+            <!-- problem -->
+            <div class="mt150"></div>
+        </div>
+        <footer>
+            <div class="foot-box">
+                <div class="logo-box">
+                    <h5><img src="./images/foot_logo2.svg" alt="logo" ></h5>
+                    <h5><img src="./images/foot_logo.svg" alt="logo" class="footlogo"></h5>
+                    <span>철강산업계 집단지성</span>
+                </div>
+                <!-- logo-box -->
+                <div class="foot-inner">
+                    <div class="mt50"></div>
+                    <div class="foot-inner01">
+                        <ul>
+                            <li>CEO.</li>
+                            <li>조병국</li>
+                        </ul>
+                        <ul>
+                            <li>Tel.</li>
+                            <li>010-8595-0081</li>
+                        </ul>
+                    </div>
+                    <!-- foot-inner01 -->
+                    <div class="mt20"></div>
+                    <div class="foot-inner02">
+                        <ul>
+                            <li>E-mail.</li>
+                            <li>bkcho5963@gmail.com</li>
+                        </ul>                        
+                    </div>
+                    <!-- foot-inner02 -->
+                    <div class="mt20"></div>
+                    <div class="foot-inner03">
+                        <ul>
+                            <li>Address.</li>
+                            <li>(우)37555 &nbsp;</li>
+                            <li>경북 포항시 북구 흥해읍 신덕로 60 포항대학교 창업보육센터 202호</li>
+                        </ul>
+                    </div>
+                    <!-- foot-inner03 -->
+                    <div class="mt20"></div>
+                    <div class="foot-inner04">
+                        <ul>
+                            <li>㈜ 베투스네트웍스</li>
+                        </ul>
+                    </div>
+                    <!-- foot-inner04 -->
+                </div>
+                <!-- foot-inner -->
+                <div class="btn-box">
+                    <ul>
+                        <li><a href="./user/terms.html">서비스 이용약관</a></li>
+                        <li><a href="./user/terms.html">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <!-- btn-box -->
+            </div>
+        </footer>
+        <!-- footer -->
+        <div class="top-btn">
+            <a href="#" class="btn1"><img src="./images/top.jpg" alt="top-btn"></a>
+            <a href="#" class="btn2"><img src="./images/top-hover.jpg" alt="top-btn-hover"></a>
+        </div>
+        <!-- top-btn -->
+
+    </div>
+    <!-- wrap -->
+
+
+
+    <!---------------------------------------------------------- script ---------------------------------------------------------->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="./script/jq.js"></script>
+
+
+    <!-- 스와이퍼 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+
+            loop: true,
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+
+            speed: 3000,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+        });
+    </script>
+
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        AOS.init({
+            offset: 120,
+            delay: 10,
+            duration: 400,
+            easing: 'ease-in',
+            once: true,
+            mirror: false,
+            anchorPlacement: 'top-bottom'
+        });    
+    </script>
+</body>
+
+</html>

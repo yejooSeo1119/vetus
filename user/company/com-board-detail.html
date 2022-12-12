@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetus</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="com-board-detail-wrap" class="wrap">
+        <header>
+            <div class="header-inner">
+                <h1><a href="../../index.html"><img src="../../images/logo_bk.svg" alt="logo_bk"></a></h1>
+                <!-- logo -->
+                <nav>
+                    <ul class="nav">
+                        <li><a href="../../about.html" style="position: relative;">About Vetus  <div class="solid5"></div></a>
+                            <ul class="sub">
+                                <li><a href="../../about.html#about">About VETUS</a></li>
+                                <li><a href="../../about.html#vision">Mission&Vision</a></li>
+                                <li><a href="../../abouabout.htmlt#how">How to Use</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../social" style="position: relative;">Social IMPACT <div class="solid5"></div></a>
+                            <ul class="sub">
+                                <li><a href="../../social.html#problem">Social Problem</a></li>
+                                <li><a href="../../social.html#impact">Social IMPACT</a></li>
+                                <li><a href="../../social.html#esg">About E.S.G</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../current.html" style="position: relative;">Current STATUS <div class="solid5"></div></a>
+                            <ul class="sub">
+                                <li><a href="../../current.html">Problem Definition</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav-bg"></div>
+                <!-- nav -->
+                <div class="btn">
+                    <button class="problem" style="position: relative;"><a href="../../problem.html">문제정의 등록 <div class="solid3"></div></a></button>
+                    <button class="logout" style="position: relative;"><a href="../../index.html">Logout <div class="solid4"></div></a></button>
+                    <button class="account" style="position: relative;"><a href="../accout/accout.html">Mypage <div class="solid4"></div></a></button> 
+                </div>           
+                <!-- btn -->
+            </div>
+            <!-- header-inner -->
+        </header>
+        <!-- header -->
+        <div class="popup">
+            <div class="container">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">문제정립</li>
+                    <li class="tab-link" data-tab="tab-2">의견교류</li>
+                    <li class="tab-link" data-tab="tab-3">해법제안</li>
+                    <li class="tab-link" data-tab="tab-4">실행계획</li>
+                </ul>
+                <div id="tab-1" class="tab-content current">
+                    <img src="../../images/resources01.jpg" alt="문제정립">
+                </div>
+                <div id="tab-2" class="tab-content">
+                    <img src="../../images/resources02.jpg" alt="의견교류">
+                </div>
+                <div id="tab-3" class="tab-content">
+                    <img src="../../images/resources03.jpg" alt="해법제안">
+                </div>
+                <div id="tab-4" class="tab-content">
+                    <img src="../../images/resources04.jpg" alt="실행계획">
+                </div>
+            </div>
+            <div class="popupBg"></div>
+            <button type="button" class="close">X 닫기</button>
+        </div>
+        <!-- 팝업 -->
+        <div class="bg-box">
+            <img src="../../images/bg-membership.jpg" alt="멤버쉽bg">
+        </div>
+        <div class="content">
+            <div class="detail-inner">
+                <div class="mt150"></div>
+                <h4>문제명</h4>
+                <div class="mt50"></div>  
+                    <div class="tab-box">
+                        <ul class="tabnav">
+                            <li><a href="#boardTab01">문제정의</a></li>
+                            <li><a href="#boardTab02">의견교류</a></li>
+                            <li><a href="#boardTab03">해결방안</a></li>
+                            <li><a href="#boardTab04">실행계획</a></li>
+                        </ul>
+                    </div>          
+                    <div class="topbox detail-box">
+                        <table>
+                            <colgroup>
+                                <col width="15%">
+                                <col width="35%">
+                                <col width="15%">
+                                <col width="35%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>제안기업</th>
+                                    <td>(주) 철강기업</td>
+                                    <th>종료일</th>
+                                    <td>2022.00.00</td>
+                                </tr>
+                                <tr>
+                                    <th>기술분야</th>
+                                    <td colspan="3">
+                                        STS 더스트 처리기술
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>보상금(만원)</th>
+                                    <td>100</td>
+                                    <th>관리 ACE</th>
+                                    <td>조*국</td>
+                                </tr>
+                                <tr>
+                                    <th>관련 전문가</th>
+                                    <td colspan="3" style="text-align: center;">관련전문가</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- topbox -->
+                    <div class="mt50"></div>
+                    <div class="tabcontent">
+                        <div id="boardTab01" class="boardTab">    
+                            <div class="detail-box01 detail-box">
+                                <strong>문제/과제 개요</strong>
+                                <div class="box01-cont cont-box">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <!-- 문제/과제 개요 -->
+                            <div class="detail-box02 detail-box">
+                                <strong>현재상태(As-is)</strong>
+                                <div class="box02-cont cont-box">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <!-- 현재상태 -->
+                            <div class="detail-box03 detail-box">
+                                <strong>요구목표/지수(Should-Be)</strong>
+                                <div class="box03-cont cont-box">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <!-- 요구목표 -->
+                            <div class="detail-box04 detail-box">
+                                <strong>해결과제(Problem/Project)</strong>
+                                <div class="box04-cont cont-box">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <!--해결과제 -->
+                            <div class="mt50"></div>
+                        </div> 
+                        <!-- tab01 --> 
+                        <div id="boardTab02" class="boardTab">
+                            <div class="writer">
+                                <div class="writer-box">
+                                    <span class="name">홍길동</span>
+                                    <textarea placeholder="댓글을 작성해주세요."
+                                        style="resize: none; box-sizing: border-box; border: 0; background-color: transparent; overflow-wrap: break-word; overflow: hidden;"></textarea>
+                                </div>
+                                <!-- writer-box -->
+                                <div class="submitbtn">
+                                    <a href="#" role="button">등록</a>
+                                </div>
+                            </div>
+                            <!-- writer -->
+                            <div class="commemt">
+                                <div class="commemt-box">
+                                    <ul class="comment-list">
+                                        <li class="commemt-item">
+                                            <div class="commemt-area">
+                                                <div class="commemt-text">
+                                                    <div class="nick">
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-commemt">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- commemt-area -->
+                                        </li>
+                                        <!-- commemt-item -->
+                                        <li class="commemt-item commemt-item-reply">
+                                            <div class="commemt-area">
+                                                <div class="commemt-text">
+                                                    <div class="nick">
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-commemt">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- commemt-area -->
+                                        </li>
+                                        <!-- commemt-item-reply -->
+                                        <li class="commemt-item">
+                                            <div class="commemt-area">
+                                                <div class="commemt-text">
+                                                    <div class="nick">
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-commemt">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- commemt-area -->
+                                        </li>
+                                        <!-- commemt-item -->
+                                        <li class="commemt-item commemt-item-reply">
+                                            <div class="commemt-area">
+                                                <div class="commemt-text">
+                                                    <div class="nick">
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-commemt">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- commemt-area -->
+                                        </li>
+                                        <!-- commemt-item-reply -->
+                                        <li class="commemt-item commemt-item-reply">
+                                            <div class="commemt-area">
+                                                <div class="commemt-text">
+                                                    <div class="nick">
+                                                        <a href="#">홍길동</a>
+                                                    </div>
+                                                    <!-- nick -->
+                                                    <div class="text">
+                                                        <p class="text-view">
+                                                            <span class="text-commemt">
+                                                                댓글내용
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <!-- text -->
+                                                    <div class="info">
+                                                        <span class="info-date">2022.00.00. 22:22</span>
+                                                        <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    </div>
+                                                    <!-- info -->
+                                                </div>
+                                            </div>
+                                            <!-- commemt-area -->
+                                        </li>
+                                        <!-- commemt-item-reply -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- commemt -->
+                            <div class="mt50"></div>
+                        </div>
+                        <!-- tab02 -->
+                        <div id="boardTab03" class="boardTab">    
+                            <div class="detail-box01 detail-box">
+                                <strong>문제/과제 개요</strong>
+                                <div class="box01-cont cont-box">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <!-- 문제/과제 개요 -->
+                            <div class="detail-box02 detail-box">
+                                <strong>현재상태(As-is)</strong>
+                                <div class="box02-cont cont-box">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <!-- 현재상태 -->
+                            <div class="detail-box03 detail-box">
+                                <strong>요구목표/지수(Should-Be)</strong>
+                                <div class="box03-cont cont-box">
+                                    <textarea></textarea>  
+                                </div>
+                            </div>
+                            <!-- 요구목표 -->
+                            <div class="detail-box04 detail-box">
+                                <strong>해결과제(Problem/Project)</strong>
+                                <div class="box04-cont cont-box">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <!--해결과제 -->
+                        </div>
+                        <!-- tab03 -->
+                        <div id="boardTab04" class="boardTab">    
+                            <div class="detail-box01 detail-box">
+                                <strong>문제/과제 개요</strong>
+                                <div class="box01-cont cont-box">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <!-- 문제/과제 개요 -->
+                            <div class="detail-box02 detail-box">
+                                <strong>현재상태(As-is)</strong>
+                                <div class="box02-cont cont-box">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <!-- 현재상태 -->
+                            <div class="detail-box03 detail-box">
+                                <strong>요구목표/지수(Should-Be)</strong>
+                                <div class="box03-cont cont-box">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <!-- 요구목표 -->
+                            <div class="detail-box04 detail-box">
+                                <strong>해결과제(Problem/Project)</strong>
+                                <div class="box04-cont cont-box">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <!--해결과제 -->
+                        </div>
+                        <!-- tab04 -->
+                </div>
+                <!-- tabcont -->
+                <div class="mt50"></div>
+            </div>   
+            <!-- detail-inner -->
+            <div class="mt20"></div>
+            <button class="reference popupOpen">참고자료</button>
+        </div>
+        <!-- content -->
+        <div class="mt150"></div>
+        <footer>
+            <div class="foot-box">
+                <div class="logo-box">
+                    <h5><img src="../images/foot_logo2.svg" alt="logo" ></h5>
+                    <h5><img src="../images/foot_logo.svg" alt="logo" class="footlogo"></h5>
+                    <span>철강산업계 집단지성</span>
+                </div>
+                <!-- logo-box -->
+                <div class="foot-inner">
+                    <div class="mt50"></div>
+                    <div class="foot-inner01">
+                        <ul>
+                            <li>CEO.</li>
+                            <li>조병국</li>
+                        </ul>
+                        <ul>
+                            <li>Tel.</li>
+                            <li>010-8595-0081</li>
+                        </ul>
+                    </div>
+                    <!-- foot-inner01 -->
+                    <div class="mt20"></div>
+                    <div class="foot-inner02">
+                        <ul>
+                            <li>E-mail.</li>
+                            <li>bkcho5963@gmail.com</li>
+                        </ul>                        
+                    </div>
+                    <!-- foot-inner02 -->
+                    <div class="mt20"></div>
+                    <div class="foot-inner03">
+                        <ul>
+                            <li>Address.</li>
+                            <li>(우)37555 &nbsp;</li>
+                            <li>경북 포항시 북구 흥해읍 신덕로 60 포항대학교 창업보육센터 202호</li>
+                        </ul>
+                    </div>
+                    <!-- foot-inner03 -->
+                    <div class="mt20"></div>
+                    <div class="foot-inner04">
+                        <ul>
+                            <li>㈜ 베투스네트웍스</li>
+                        </ul>
+                    </div>
+                    <!-- foot-inner04 -->
+                </div>
+                <!-- foot-inner -->
+                <div class="btn-box">
+                    <ul>
+                        <li><a href="../terms.html">서비스 이용약관</a></li>
+                        <li><a href="../terms.html">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <!-- btn-box -->
+            </div>
+        </footer>
+        <!-- footer -->
+        <div class="top-btn">
+            <a href="#" class="btn1"><img src="../../images/top.jpg" alt="top-btn"></a>
+            <a href="#" class="btn2"><img src="../../images/top-hover.jpg" alt="top-btn-hover"></a>
+        </div>
+        <!-- top-btn -->  
+
+
+    <!---------------------------------------------------------- script ---------------------------------------------------------->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="../../script/jq.js"></script>
+  <script>
+    $(function(){
+	$('.tabcontent > div').hide();
+	$('.tabnav a').click(function () {
+		$('.tabcontent > div').hide().filter(this.hash).fadeIn();
+		$('.tabnav a').removeClass('active');
+		$(this).addClass('active');
+		return false;
+	}).filter(':eq(0)').click();
+  });
+  </script>
+</body>
+</html>

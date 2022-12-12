@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetus</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="prosign-wrap" class="wrap">
+        <header>
+            <div class="header-inner">
+                <h1><a href="../../index.html"><img src="../../images/logo_bk.svg" alt="logo"></a></h1>
+                <!-- logo -->
+                <nav>
+                    <ul class="nav">
+                        <li><a href="../../about.html" style="position: relative;">About Vetus <div class="solid5">
+                                </div></a>
+                            <ul class="sub">
+                                <li><a href="../../about.html#about">About VETUS</a></li>
+                                <li><a href="../../about.html#vision">Vision&Mission</a></li>
+                                <li><a href="../../abouabout.htmlt#how">How to Use</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../social" style="position: relative;">Social IMPACT<div class="solid5"></div>
+                                </a>
+                            <ul class="sub">
+                                <li><a href="../../social.html#problem">Social Problem</a></li>
+                                <li><a href="../../social.html#impact">Social IMPACT</a></li>
+                                <li><a href="../../social.html#esg">About E.S.G</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../current.html" style="position: relative;">Current STATUS<div class="solid5">
+                                </div></a>
+                            <ul class="sub">
+                                <li><a href="../../current.html">Problem Definition</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav-bg"></div>
+                <!-- nav -->
+                <div class="btn">
+                    <button class="problem" style="position: relative;"><a href="../../problem.html">문제정의 등록 <div
+                                class="solid3"></div></a></button>
+                    <button class="logout" style="position: relative;"><a href="../../index.html">Logout <div
+                                class="solid4"></div></a></button>
+                    <button class="account" style="position: relative;"><a href="../accout/accout.html">Mypage <div
+                                class="solid4"></div></a></button>
+                </div>
+                <!-- btn -->
+            </div>
+            <!-- header-inner -->
+        </header>
+        <!-- header -->
+        <div class="bg-box">
+            <img src="../../images/bg-membership.jpg" alt="멤버쉽bg">
+        </div>
+        <div class="content">
+            <div class="mt150"></div>
+            <div class="title">
+                <h2>회원가입</h2>
+            </div>
+            <div class="mt100"></div>
+            <div class="sign">
+                <div class="data">
+                    <div class="mt10"></div>
+                    <div class="datatitle">회원정보를 입력해주세요.</div>
+                    <div class="mt10"></div>
+                    <div class="table-type1">
+                        <form action="" method="post" id="signform" name="signform" role="form">
+                            <table>
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="80%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>회원구분</th>
+                                        <td style="font-size: 16px;">전문가
+                                            <input type="hidden" name="type" id="type" value="1">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="star">*</span>
+                                            아이디
+                                        </th>
+                                        <td>
+                                            <input type="text" name="mberid" id="mberid" class="col70"
+                                                placeholder="영문(소문자), 숫자 포함 4자리 이상" required>
+                                            &nbsp;
+                                            <button type="submit" class="btn col15">중복확인</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="star">*</span>
+                                            비밀번호
+                                        </th>
+                                        <td>
+                                            <input type="password" name="password" id="password" class="col100"
+                                                placeholder="영문(소문자), 숫자 포함 8자리 이상" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="star">*</span>
+                                            비밀번호 확인
+                                        </th>
+                                        <td>
+                                            <input type="password" name="password2" id="password2" class="col100"
+                                                placeholder="영문(소문자), 숫자 포함 8자리 이상" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="star">*</span>
+                                            이름
+                                        </th>
+                                        <td>
+                                            <input type="text" name="item" id="item" class="col100" required>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                            <span class="star">*</span>
+                                            닉네임
+                                        </th>
+                                        <td>
+                                            <input type="text" name="mberNick" id="mberNick" class="col70" required>
+                                            <button type="submit" class="btn col15">중복확인</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            생년월일
+                                        </th>
+                                        <td>
+                                            <input type="date" name="mberBirth" id="mberBirth" class="col100">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="star">*</span>
+                                            전화번호
+                                        </th>
+                                        <td>
+                                            <input type="text" name="telNum" id="telNum1" class="numonly" maxlength="4"
+                                                required>
+                                            &nbsp;&nbsp;-&nbsp;&nbsp;
+                                            <input type="text" name="telNum" id="telNum2" class="numonly" maxlength="4"
+                                                required>
+                                            &nbsp;&nbsp;-&nbsp;&nbsp;
+                                            <input type="text" name="telNum" id="telNum3" class="numonly" maxlength="4"
+                                                required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            이메일
+                                        </th>
+                                        <td>
+                                            <input type="email" name="mberEmail" id="mberEmail" class="col100">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="star">*</span>
+                                            전문분야
+                                        </th>
+                                        <td>
+                                            <input type="text" name="field" id="field" class="col100" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="star">*</span>
+                                            경력(년)
+                                        </th>
+                                        <td class="checkbox">
+                                            <input type="checkbox" name="check-sign" id="check-sign">
+                                            <label for="">예</label>
+                                            <input type="checkbox" name="check-sign" id="check-sign">
+                                            <label for="">아니오</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="padding-bottom: 80px; line-height: 50px;">
+                                            경력 요약 설명
+                                        </th>
+                                        <td>
+                                            <textarea name="explanation" id="explanation" cols="52" rows="3"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="star">*</span>
+                                            커뮤니티 가입
+                                        </th>
+                                        <td class="checkbox">
+                                            <input type="checkbox" name="check-sign" id="check-sign">
+                                            <label for="">예</label>
+                                            <input type="checkbox" name="check-sign" id="check-sign">
+                                            <label for="">아니오</label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 이용약관 -->
+                            <div class="mt50"></div>
+                            <div class="agreement">
+                                <p class="agree-title">이용약관</p>
+                                <div class="mt50"></div>
+                                <p class="all">
+                                    <input type="checkbox" name="check-all" id="check-all">
+                                    <label for="check-all">
+                                        <strong>전체동의</strong>
+                                    </label>
+                                </p>
+                                <div class="mt20"></div>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="agree1" id="agree1">
+                                        <label for="agree1">[필수] 이용약관에 동의합니다.</label>
+                                        <a href="../terms.html"><img src="../../images/arrow-right-bk.png"
+                                                alt="arrow-right"></a>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="agree2" id="agree2">
+                                        <label for="agree1">[필수] 개인정보 수집 및 이용에 동의합니다.</label>
+                                        <a href="../terms.html"><img src="../../images/arrow-right-bk.png"
+                                                alt="arrow-right"></a>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="agree3" id="agree3">
+                                        <label for="agree1">[필수] 마케팅 정보 이용에 동의합니다.</label>
+                                        <a href="../terms.html"><img src="../../images/arrow-right-bk.png"
+                                                alt="arrow-right"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- data -->
+                <div class="mt50"></div>
+                <div class="sign-btn">
+                    <ul>
+                        <li><a href="javascript:;" onclick="alert('회원가입이 완료되었습니다.')"
+                                document.location.href='../../index.html' class="check" id="membSumbit"
+                                role="button">확인</a></li>
+                        <li><a href="javascript:;" onclick="alert('회원가입이 취소되었습니다.')"
+                                document.location.href='../../index.html' class="cancle" role="button">취소</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- div -->
+        </div>
+        <!-- content -->
+        <div class="mt150"></div>
+        <footer>
+            <div class="foot-box">
+                <div class="logo-box">
+                    <h5><img src="../../images/foot_logo.svg" alt="logo"></h5>
+                    <span>철강산업계 집단지성</span>
+                </div>
+                <!-- logo-box -->
+                <div class="foot-inner">
+                    <div class="mt50"></div>
+                    <div class="foot-inner01">
+                        <ul>
+                            <li>CEO.</li>
+                            <li>조병국</li>
+                        </ul>
+                        <ul>
+                            <li>Tel.</li>
+                            <li>010-8595-0081</li>
+                        </ul>
+                    </div>
+                    <!-- foot-inner01 -->
+                    <div class="mt20"></div>
+                    <div class="foot-inner02">
+                        <ul>
+                            <li>E-mail.</li>
+                            <li>bkcho5963@gmail.com</li>
+                        </ul>
+                        <ul>
+                            <li>Aeress.</li>
+                            <li>(우)37555 &nbsp;</li>
+                            <li>경북 포항시 북구 흥해읍 신덕로 60 포항대학교 창업보육센터 202호</li>
+                        </ul>
+                    </div>
+                    <!-- foot-inner02 -->
+                    <div class="mt20"></div>
+                    <div class="foot-inner03">
+                        <ul>
+                            <li>㈜ 베투스네트웍스</li>
+                        </ul>
+                    </div>
+                    <!-- foot-inner03 -->
+                </div>
+                <!-- foot-inner -->
+                <div class="btn-box">
+                    <ul>
+                        <li><a href="../terms.html">서비스 이용약관</a></li>
+                        <li><a href="../terms.html">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <!-- btn-box -->
+            </div>
+        </footer>
+        <!-- footer -->
+        <div class="top-btn">
+            <a href="#" class="btn1"><img src="../../images/top.jpg" alt="top-btn"></a>
+            <a href="#" class="btn2"><img src="../../images/top-hover.jpg" alt="top-btn-hover"></a>
+        </div>
+        <!-- top-btn -->
+        <!---------------------------------------------------------- script ---------------------------------------------------------->
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script src="../../script/jq.js"></script>
+</body>
+
+</html>
