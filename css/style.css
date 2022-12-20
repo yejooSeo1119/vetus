@@ -1747,7 +1747,7 @@ button.reference{
     margin: auto;
     border-bottom: 2px solid #031953;
 }
-.content .detail-inner h4{
+.content .detail-inner h5{
     border-bottom: 2px solid #031953;
     padding-bottom: 20px;
     box-sizing: border-box;
@@ -1760,6 +1760,7 @@ button.reference{
 .tab-box{
     width: 650px;
     height: 35px;
+    position: relative;
 }
 .tab-box li{
     width: 25%;
@@ -1767,6 +1768,7 @@ button.reference{
     float: left;
     border-right: 1px solid #dedede;
     box-sizing: border-box;
+    margin-top: -4px;
 }
 .tabnav :nth-child(1)a{
     border-left: 1px solid #dedede;
@@ -1779,6 +1781,7 @@ button.reference{
     text-align: center;
     background-color: #ededed;
     padding: 0.5em 0;
+    font-size: 18px;
 }
 .tab-box .tabnav li .active{
     background-color: #031953;
