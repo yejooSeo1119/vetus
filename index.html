@@ -8,15 +8,10 @@
     <title>Vetus</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <!-- 스와이퍼 -->
+    <!-- 스와이퍼 -->    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f1f1f5;
-        }
-    </style>
 
 </head>
 
@@ -76,36 +71,35 @@
         <!-- Swiper -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide parallax-bg" style="background-image: url(./images/1.jpg);"
-                    data-swiper-parallax="-23%">
+                <div class="swiper-slide">
+                    <img src="./images/1.jpg" alt="슬라이드 이미지">
                 </div>
                 <!-- 슬라이드 1 -->
-                <div class="swiper-slide parallax-bg" style="background-image: url(./images/2.jpg);"
-                    data-swiper-parallax="-23%">
+                <div class="swiper-slide">
+                    <img src="./images/2.jpg" alt="슬라이드 이미지">
                 </div>
                 <!-- 슬라이드 2 -->
-                <div class="swiper-slide parallax-bg" style="background-image: url(./images/3.jpg);"
-                    data-swiper-parallax="-23%">
+                <div class="swiper-slide">
+                    <img src="./images/3.jpg" alt="슬라이드 이미지">
                 </div>
                 <!-- 슬라이드 3 -->
-                <div class="swiper-slide parallax-bg" style="background-image: url(./images/4.jpg);"
-                    data-swiper-parallax="-23%">
+                <div class="swiper-slide">
+                    <img src="./images/4.jpg" alt="슬라이드 이미지">
                 </div>
                 <!-- 슬라이드 4 -->
-                <div class="swiper-slide parallax-bg" style="background-image: url(./images/5.jpg);"
-                    data-swiper-parallax="-23%">
+                <div class="swiper-slide">
+                    <img src="./images/5.jpg" alt="슬라이드 이미지">
                 </div>
-                <!-- 슬라이드 5 -->
+                <!-- 슬라이드 5 -->                
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <!-- 페이징 -->
             <div class="swiper-pagination"></div>
         </div>
-        <!-- 스와이퍼 -->
-        <div class="content">
-            <div class="mt150"></div>
-            <div class="icon">
+        <!-- 스와이퍼 -->  
+         <div class="icon" style="background-color: #f1f1f5;">
+                <div class="mt150"></div>
                 <ul>
                     <li class="up1">
                         <a href="./about.html">
@@ -125,8 +119,10 @@
                         </a>
                     </li>
                 </ul>
+                <div class="mt150"></div>
             </div>
             <!-- icon -->
+            <div class="content">
             <div class="mt50 clearfix"></div>
             <div id="problem">
                 <div class="mt150"></div>
@@ -406,8 +402,7 @@
                             <p class="summary">개요</p>
                             <div class="mt10"></div>
                             <!--종료일 기입-->
-                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명
-                            </p>
+                            <p class="summary-cont"> 설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명<br> 설명<br> 설명설명</p>
                         </div>
                     </li>
                     <!------------- 문제정의 리스트 12 --------------->
@@ -493,27 +488,21 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-
+            slidesPerView: 1,
+            spaceBetween: 30,
             loop: true,
-            spaceBetween: 0,
-            centeredSlides: true,
             autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
+                delay: 3000,
             },
-
-            speed: 3000,
-
+            speed: 2000,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-
+                prevEl: ".swiper-button-prev"
+            }
         });
     </script>
 

@@ -117,7 +117,7 @@ button{
 }
 .content  { 
     position:relative;
-    max-width: 1300px; 
+    max-width: 1200px; 
     width: 100%; 
     margin: 0px auto; 
 }
@@ -647,6 +647,7 @@ header .login, header .logout{
 .swiper {
     margin-top: 80px;
     width: 100%;
+    max-width: 100%;
     height: 800px;
     position: relative;
 }
@@ -656,7 +657,7 @@ header .login, header .logout{
     height: 100%;
     background-size: cover;
     text-align: center;
-    background: #fff;
+    background: transparent;
     margin: auto;
 
     /* Center slide text vertically */
@@ -673,6 +674,13 @@ header .login, header .logout{
     -webkit-align-items: center;
     align-items: center;
 }
+.swiper img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
 .swiper-button-next, .swiper-button-prev, .swiper-pagination{
     --swiper-theme-color: rgba(225,225,225,0.5);
 }
@@ -688,15 +696,17 @@ header .login, header .logout{
 
 
 .icon {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 100%;
     margin: auto;
     overflow: hidden;
+    position: relative;
+    top: 0;
 }
 .icon ul{
-    width: 100%;
+    width: 1000px;
     overflow: hidden;
     margin: auto;
-    float: left;
     text-align: left;    
 }
 .icon li{
@@ -774,6 +784,7 @@ header .login, header .logout{
 .board .step{
     float: left;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 .board .step-cont{
     overflow: hidden;
