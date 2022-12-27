@@ -24,7 +24,7 @@
                 <nav>
                     <ul class="nav">
                         <li><a href="./about.html" style="position: relative;">About Vetus <div class="solid5"></div>
-                                </a>
+                            </a>
                             <ul class="sub">
                                 <li><a href="./about.html">About VETUS</a></li>
                                 <li><a href="./vision.html">Mission&Vision</a></li>
@@ -32,7 +32,7 @@
                             </ul>
                         </li>
                         <li><a href="./social.html" style="position: relative;">Social IMPACT <div class="solid5"></div>
-                                </a>
+                            </a>
                             <ul class="sub">
                                 <li><a href="./social.html#problem">Social Problem</a></li>
                                 <li><a href="./social.html#impact">Social IMPACT</a></li>
@@ -82,9 +82,9 @@
                 <div id="tab-4" class="tab-content">
                     <img src="./images/resources04.jpg" alt="실행계획">
                 </div>
+                <button type="button" class="close">X 닫기</button>
             </div>
             <div class="popupBg"></div>
-            <button type="button" class="close">X 닫기</button>
         </div>
         <!-- 팝업 -->
         <div class="bg-box">
@@ -132,7 +132,7 @@
                             </tr>
                             <tr>
                                 <th>관련 전문가</th>
-                                <td colspan="3" style="text-align: center;">관련전문가</td>
+                                <td colspan="3">관련전문가</td>
                             </tr>
                         </tbody>
                     </table>
@@ -181,71 +181,79 @@
             </div>
             <!-- detail-inner -->
             <div class="mt20"></div>
-            <div class="reference-box">
-                <button class="reference popupOpen">참고자료</button>
+            <div class="btn">
+                <ul style="margin: 0;">
+                    <li><a href="#" class="reference popupOpen" role="button">참고자료</a></li>
+                    <li><a href="javascript:;"
+                            onclick="alert('임시저장되었습니다.'); document.location.href='./current.html'"
+                            class="storage" role="button">임시저장</a></li>
+                    <li><a href="javascript:;"
+                            onclick="alert('등록되었습니다.'); document.location.href='./current.html'"
+                            class="submit" role="button">등록</a></li>
+                </ul>
             </div>
         </div>
         <!-- content -->
     </div>
     <!-- wrap -->
     <div class="mt150"></div>
-        <footer>
-            <div class="foot-box">
-                <div class="logo-box">
-                    <h5><img src="./images/foot_logo2.svg" alt="logo" ></h5>
-                    <h5><img src="./images/foot_logo.svg" alt="logo" class="footlogo"></h5>
-                    <span>철강산업계 집단지성</span>
-                </div>
-                <!-- logo-box -->
-                <div class="foot-inner">
-                    <div class="mt50"></div>
-                    <div class="foot-inner01">
-                        <ul>
-                            <li>CEO.</li>
-                            <li>조병국</li>
-                        </ul>
-                        <ul>
-                            <li>Tel.</li>
-                            <li>010-8595-0081</li>
-                        </ul>
-                    </div>
-                    <!-- foot-inner01 -->
-                    <div class="mt20"></div>
-                    <div class="foot-inner02">
-                        <ul>
-                            <li>E-mail.</li>
-                            <li>vetusnet001@gmail.com</li>
-                        </ul>                        
-                    </div>
-                    <!-- foot-inner02 -->
-                    <div class="mt20"></div>
-                    <div class="foot-inner03">
-                        <ul>
-                            <li>Address.</li>
-                            <li>(우)37555 &nbsp;</li>
-                            <li>경북 포항시 북구 흥해읍 신덕로 60 포항대학교 창업보육센터 202호</li>
-                        </ul>
-                    </div>
-                    <!-- foot-inner03 -->
-                    <div class="mt20"></div>
-                    <div class="foot-inner04">
-                        <ul>
-                            <li>㈜ 베투스네트웍스</li>
-                        </ul>
-                    </div>
-                    <!-- foot-inner04 -->
-                </div>
-                <!-- foot-inner -->
-                <div class="btn-box">
+    <footer>
+        <div class="foot-box">
+            <div class="logo-box">
+                <h5><img src="./images/foot_logo2.svg" alt="logo"></h5>
+                <h5><img src="./images/foot_logo.svg" alt="logo" class="footlogo"></h5>
+                <span>철강산업계 집단지성</span>
+            </div>
+            <!-- logo-box -->
+            <div class="foot-inner">
+                <div class="mt50"></div>
+                <div class="foot-inner01">
                     <ul>
-                        <li><a href="./user/terms.html">서비스 이용약관</a></li>
-                        <li><a href="./user/terms.html">개인정보처리방침</a></li>
+                        <li>CEO.</li>
+                        <li>조병국</li>
+                    </ul>
+                    <ul>
+                        <li>Tel.</li>
+                        <li>010-8595-0081</li>
                     </ul>
                 </div>
-                <!-- btn-box -->
+                <!-- foot-inner01 -->
+                <div class="mt20"></div>
+                <div class="foot-inner02">
+                    <ul>
+                        <li>E-mail.</li>
+                        <li>vetusnet001@gmail.com</li>
+                    </ul>
+                </div>
+                <!-- foot-inner02 -->
+                <div class="mt20"></div>
+                <div class="foot-inner03">
+                    <ul>
+                        <li>Address.</li>
+                        <li>(우)37555 &nbsp;</li>
+                        <li>경북 포항시 북구 흥해읍 신덕로 60 포항대학교 창업보육센터 202호</li>
+                    </ul>
+                </div>
+                <!-- foot-inner03 -->
+                <div class="mt20"></div>
+                <div class="foot-inner04">
+                    <ul>
+                        <li>㈜ 베투스네트웍스</li>
+                    </ul>
+                </div>
+                <!-- foot-inner04 -->
             </div>
-        </footer>
-        <!-- footer -->
+            <!-- foot-inner -->
+            <div class="btn-box">
+                <ul>
+                    <li><a href="./user/terms.html">서비스 이용약관</a></li>
+                    <li><a href="./user/terms.html">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            <!-- btn-box -->
+        </div>
+    </footer>
+    <!-- footer -->
     <div class="top-btn">
         <a href="#" class="btn1"><img src="./images/top.jpg" alt="top-btn"></a>
         <a href="#" class="btn2"><img src="./images/top-hover.jpg" alt="top-btn-hover"></a>

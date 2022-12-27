@@ -111,11 +111,26 @@ button{
     display: none;
 }
 .wrap{
-    min-width: 1200px;
+    max-width: 100%;
     width: 100%;
     margin: auto;
 }
-.content  { 
+@media screen and (min-width: 751px) and (max-width: 1199px){
+    .wrap{
+        max-width: 100%;
+        width: 800px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .wrap{
+        max-width: 100%;
+        width: 500px;
+        margin: auto;
+    }
+}
+.content{ 
     position:relative;
     max-width: 1200px; 
     width: 100%; 
@@ -366,7 +381,7 @@ button, input[type='submit'],input[type='image'],input[type="button"]{
 }
 .up2{
     animation-name: up;
-    animation-duration: 2s;
+    animation-duration: 1.4s;
     animation-fill-mode: forwards;
 }
 .up3{
@@ -515,14 +530,13 @@ button, input[type='submit'],input[type='image'],input[type="button"]{
     z-index:-1;
     visibility:hidden;
 }
-header.main .problem:hover .solid, header.main .login:hover .solid2, header.main .join:hover .solid2, header.main ul li a:hover .solid6, .problem:hover .solid3, .login:hover .solid4, .join:hover .solid4, nav li a:hover .solid5, .logout:hover .solid4, .account:hover .solid4{
+header.main button.problem:hover .solid, header.main button.login:hover .solid2, header.main button.join:hover .solid2, header.main ul li a:hover .solid6, .problem:hover .solid3, .login:hover .solid4, .join:hover .solid4, nav li a:hover .solid5, .logout:hover .solid4, .account:hover .solid4{
     transform:scaleX(1);
     opacity:1;
     visibility:visible;
 }
 /* header */
 header{
-    min-width: 1300px;
     width: 100%;
     height: 80px;
     margin: auto;
@@ -534,11 +548,10 @@ header{
     border-bottom: 1px solid#191919;
 }
 .header-inner{
-    width: 1320px;
+    width: 1300px;
+    max-width: 100%;
     margin: auto;
 }
-
-
 /* logo */
 header h1{
     float: left;
@@ -630,7 +643,7 @@ header .btn button a{
     display: block;    
     color: #191919;   
 }
-header .problem{
+header button.problem{
     margin-right: 30px;
     font-size: 20px;
     background-color: rgba(225, 225, 225, 0);
@@ -714,7 +727,7 @@ header .login, header .logout{
     overflow: hidden;
     float: left;
     box-sizing: border-box;  
-    background: url(../images/plus.png) 80% 50% no-repeat rgba(0, 0, 0, 0);
+    background: url(../images/plus.png) 95% 50% no-repeat rgba(0, 0, 0, 0);
     border: 1px solid #0318537a;
     padding: 50px;
     margin-right: 2%;
@@ -722,7 +735,7 @@ header .login, header .logout{
     cursor: pointer;
 }
 .icon li:hover{
-    background: url(../images/plus-wh.png) 80% 50% no-repeat #031953;
+    background: url(../images/plus-wh.png) 95% 50% no-repeat #031953;
 }
 .icon li:hover a{
     color: #fff;
@@ -738,34 +751,52 @@ header .login, header .logout{
 
 
 /*------------------ problem start-----------------------*/
-#index-wrap #problem{
-    width: 1280px;
+div.problem{
+    width: 1200px;
+    max-width: 100%;
     overflow: hidden;
     margin: auto;
     padding: 20px;
     box-sizing: border-box;
 }
-#index-wrap #problem h2{
+div.problem h2{
     text-align: center;
     height: 100px;
 }
-#index-wrap #problem .board-box{
+div.problem .board-box{
     width: 100%;
     overflow: hidden;
     display: block;
     padding: 20px;
+    margin: auto;
 }
 .board-box li{
-    width: 270px;
+    width: 23%;
     height: 350px;
     float: left;
     border: 2px solid #dbdbdb;
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
-    margin: 0 10px 50px 10px;
+    margin: 0 1% 5% 0;
     transition: all 0.5s;
     position: relative;
+    cursor: pointer;
+}
+@media screen and (min-width: 751px) and (max-width: 1199px){
+    .board-box li{
+        width: 30%;
+        margin: auto;
+        margin: 0 2% 5% 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .board-box li{
+        width: 47%;
+        margin: auto;
+        margin: 0 1% 5% 0;
+    }
 }
 .board h5{
     width: 40px;
@@ -802,7 +833,7 @@ header .login, header .logout{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-#index-wrap .board-box li:hover{
+.board-box li:hover{
     transform: translateY(-20px);
     border:2px solid #ffbf00;
 }
@@ -812,15 +843,17 @@ header .login, header .logout{
 
 /*------------------ footer start-----------------------*/
 footer{
-    clear: both;
-    width: 100%;  
-    height: 270px;
+    width: 100%; 
+    height: 300px;
+    display: block;
+    padding-top: 50px 0;
     margin: auto;
     background-color: #031953;
-    box-sizing: border-box;
 }
+
 .foot-box{
-    max-width: 1300px;
+    display: block;
+    max-width: 1200px;
     width: 100%;
     height: 100%;
     color: #fff;
@@ -830,14 +863,56 @@ footer{
     font-weight:100;
     box-sizing: border-box;
 }
+@media screen and (min-width: 751px) and (max-width: 1199px){
+    footer{
+        height: 500px;
+    }
+    .foot-box{
+        width: 700px;
+        max-width: 100%;
+    }
+    .btn-box ul{
+        width: 100%;
+    }
+    .btn-box ul li{
+        width: 49%;
+        float: left;
+        margin-right: 1%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .foot-box{
+        width: 400px;
+        max-width: 100%;
+    }
+    footer{
+        height: 500px;
+    }
+    .foot-box{
+        width: 700px;
+        max-width: 100%;
+    }
+    .btn-box ul{
+        width: 100%;
+    }
+    .btn-box ul li{
+        width: 49%;
+        float: left;
+        margin-right: 1%;
+        text-align: center;
+    }
+}
 .foot-box div{
     float: left;
 }
 .logo-box{
-padding: 40px 0 0 40px;
+padding: 40px 0 0 20px;
+box-sizing: border-box;
 }
 .logo-box h5{
-    width: 170px;
+    width: 160px;
     float: left;
 }
 .footlogo{
@@ -1056,6 +1131,9 @@ padding: 40px 0 0 40px;
 table{
     border-spacing: 0;
     width: 100%;
+    max-width: 100%;
+    margin: auto;
+    box-sizing: border-box;
 }
 colgroup{
     display: table-column-group;
@@ -1406,14 +1484,16 @@ tbody{
 .offer .btn ul, .btn ul{
     text-align: right;
     display: block;
-    margin-right:70px;
 }
 .offer .btn ul li, .btn ul li{
     width: 31.666%;
     display: inline-block;
     max-width: 100px;
-    margin-right: 2%;
     text-align: center;
+    margin-right: 2%;
+}
+.offer .btn ul li:last-child, .btn ul li:last-child{
+    margin-right: 0%;
 }
 .offer .btn ul li a, .btn ul li a{ 
     display: block;
@@ -1440,12 +1520,14 @@ button.reference{
 /* madal */
 .popup{
     display: none;
+    max-width: 100%;
+    width: 1300px;
 }
 .container{
 	width: 70%;
 	margin:auto;
     box-sizing: border-box;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -1459,7 +1541,7 @@ button.reference{
     background-color: #ededed;
 }
 .popup ul.tabs li{
-    width: 24.8%;
+    width: 24%;
 	display: inline-block;
 	cursor: pointer;
     text-align: center;
@@ -1491,18 +1573,15 @@ button.reference{
 	display: inherit;
 }
 .popup button.close{
-    position: absolute;
-    top: 65px;
-    right: 206px;
     z-index: 999;
     font-size: 16px;
-    border: 1px solid #ededed;
-    background-color: #fff;
+    border: 2px solid #ededed;
+    background-color: transparent;
     cursor: pointer;
-    width: 80px;
-    height: 54px;
-    line-height: 53px;
-
+    color: #fff;
+    padding: 10px 15px;
+    float: right;
+    margin-top: 10px;
 }
 
 /*----------------------------------------- problem end-----------------------------------------*/
@@ -1595,7 +1674,7 @@ button.reference{
 
 
 
-#board-wrap .board, #current-wrap .board, #current-detail03-wrap .board{
+#board-wrap .board, #current-wrap .board{
     border-bottom: 2px solid #031953;
     position: relative;
     max-width: 1300px;
@@ -1603,9 +1682,6 @@ button.reference{
     margin: auto;
     box-sizing: border-box;
     text-align: center;
-}
-#current-detail03-wrap .board{
-    border-top: 1px solid#ededed;
 }
 #current-wrap .board{
     border-top: 0;
@@ -1620,6 +1696,14 @@ button.reference{
     border-bottom: 1px solid #ededed;
     background-color: #f1f1f5;
     border-top: 2px solid #031953;
+    box-sizing: border-box;
+}
+#current-detail03-wrap .board{
+    position: relative;
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
 }
 #current-detail03-wrap .board th{
     border-top: 0px;
@@ -1638,6 +1722,7 @@ button.reference{
 }
 .boardList{
     text-align: center;
+    margin: auto;
 }
 .boardStep{
     overflow: hidden;
@@ -1753,7 +1838,7 @@ button.reference{
 
 
 
-.content .detail-inner{
+#board-detail .content .detail-inner{
     width: 100%;
     margin: auto;
     border-bottom: 2px solid #031953;
